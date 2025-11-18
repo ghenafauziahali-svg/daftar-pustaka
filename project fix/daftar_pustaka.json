@@ -1,0 +1,171 @@
+[
+    {
+        "referensi": "Book",
+        "style": "APA",
+        "judul": "judul ini",
+        "authors": [
+            "Ali, Ghena Fauziah",
+            "Ali, Ghen Fa"
+        ],
+        "tahun": 1023,
+        "jurnal": "",
+        "volume": "111",
+        "issue": "",
+        "halaman": "120-2200",
+        "edition": "2",
+        "editors": [
+            "Ali, Ghena Fauzaiha",
+            "Ali, Ghena",
+            "Ali"
+        ],
+        "city": "jakarta",
+        "publisher": "pub",
+        "chapter": "",
+        "link": "link",
+        "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "APA",
+        "judul": "judul",
+        "authors": [
+            "Lina, Pardde"
+        ],
+        "tahun": 2022,
+        "jurnal": "jurnal",
+        "volume": "2",
+        "issue": "",
+        "halaman": "12-22",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "IEEE",
+        "judul": "judul",
+        "authors": [
+            "As"
+        ],
+        "tahun": 2,
+        "jurnal": "jurnal",
+        "volume": "2",
+        "issue": "1",
+        "halaman": "12",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "2",
+        "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "APA",
+        "judul": "judul",
+        "authors": [
+            "Ali, Ghena Fauziah",
+            "Prasetyo, Raiz Erda"
+        ],
+        "tahun": 2020,
+        "jurnal": "jurnal",
+        "volume": "2",
+        "issue": "2",
+        "halaman": "12-122",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "APA",
+        "judul": "judul",
+        "authors": [
+            "Ali, Ghen",
+            ", Ali, Ghena Fauziah"
+        ],
+        "tahun": 2022,
+        "jurnal": "jurnal",
+        "volume": "",
+        "issue": "2",
+        "halaman": "12",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": ""
+    },
+    {
+        "referensi": "Book",
+        "style": "MLA",
+        "judul": "judul",
+        "authors": [
+            "Ali, Ghe",
+            "Ali"
+        ],
+        "tahun": 2303,
+        "jurnal": "",
+        "volume": "",
+        "issue": "",
+        "halaman": "12",
+        "edition": "4",
+        "editors": [],
+        "city": "jakrat",
+        "publisher": "derma",
+        "chapter": "",
+        "link": "",
+        "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "APA",
+        "judul": "j",
+        "authors": [
+            "S"
+        ],
+        "tahun": 4,
+        "jurnal": "q",
+        "volume": "",
+        "issue": "",
+        "halaman": "g",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "APA",
+        "judul": "Apa ya",
+        "authors": [
+            "Isan",
+            "Rey"
+        ],
+        "tahun": 1999,
+        "jurnal": "mtk",
+        "volume": "",
+        "issue": "",
+        "halaman": "12-16",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "https://google.com/",
+        "book": ""
+    }
+]
