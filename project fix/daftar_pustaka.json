@@ -1,10 +1,11 @@
 [
     {
         "referensi": "Journal/Article",
-        "style": "Harvard",
+        "style": "Vancouver",
         "judul": "Bisa ya seAsing itu",
         "authors": [
-            "Isan"
+            "Isan",
+            "Erlando, Faris"
         ],
         "tahun": 2025,
         "jurnal": "",

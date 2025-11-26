@@ -138,18 +138,18 @@ def balik_nama(nama):
     else:
         return nama
 
-def balik_semua_nama(authors):
-    hasil = []
-    for nama in authors:
-        hasil.append(balik_nama(nama))
-    penulis = hasil 
-    if len(penulis) == 1:
-        return penulis[0]       
-    elif len(penulis) == 2:
-        return f"{penulis[0]} and {penulis[1]}"
-    else:
-        semua_kecuali_terakhir = ", ".join(penulis[:-1])
-        return semua_kecuali_terakhir + f", and {penulis[-1]}"
+# def balik_semua_nama(authors):
+#     hasil = []
+#     for nama in authors:
+#         hasil.append(balik_nama(nama))
+#     penulis = hasil 
+#     if len(penulis) == 1:
+#         return penulis[0]       
+#     elif len(penulis) == 2:
+#         return f"{penulis[0]} and {penulis[1]}"
+#     else:
+#         semua_kecuali_terakhir = ", ".join(penulis[:-1])
+#         return semua_kecuali_terakhir + f", and {penulis[-1]}"
 
 def format_edition(edition):
     if not edition:
@@ -207,3 +207,33 @@ def balik_semua_namaeditors(editors):
     else:
         semua_kecuali_terakhir = ", ".join(editors[:-1])
         return semua_kecuali_terakhir + f", & {editors[-1]}, Eds."
+
+def format_et_al_lebihdari3(authors):
+    format_akhir_inisial = []
+    for name in authors:
+        if "," in name:
+            nama_split = [bagian.strip() for bagian in name.split(",")]
+            akhir = nama_split[0]
+            awal = nama_split[1]
+            inisial_split = awal.strip().split()
+            inisial_format = " ".join([f"{p[0]}." for p in inisial_split])
+            format_akhir_inisial.append(f"{akhir}, {inisial_format}")
+        else:
+            nama_split = name.strip().split()
+            if len(nama_split) > 1:
+                akhir = nama_split[-1]
+                inisial = " ".join([f"{p[0]}." for p in nama_split[:-1]])
+                format_akhir_inisial.append(f"{akhir}, {inisial}")
+            else:
+                format_akhir_inisial.append(name)
+    
+    if len(format_akhir_inisial) == 1:
+        return format_akhir_inisial[0]
+    elif len(format_akhir_inisial) == 2:
+        return f"{format_akhir_inisial[0]} & {format_akhir_inisial[1]}."
+    elif len(format_akhir_inisial) == 3:
+        return f"{format_akhir_inisial[0]}, {format_akhir_inisial[1]} & {format_akhir_inisial[2]}."
+    else:
+        return f"{format_akhir_inisial[0]}, et al."
+
+    return format_et_al_lebihdari3(format_akhir_inisial)

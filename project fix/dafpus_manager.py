@@ -6,16 +6,19 @@ import os
 
 init(autoreset=True)
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+JSON_PATH = os.path.join(BASE_DIR, "daftar_pustaka.json")
+
 daftar_pustaka = []
 
 def simpan_data():
-    with open("daftar_pustaka.json", "w", encoding="utf-8") as f:
+    with open(JSON_PATH, "w", encoding="utf-8") as f:
         json.dump(daftar_pustaka, f, ensure_ascii=False, indent=4)
 
 def muat_data():
     global daftar_pustaka
     try:
-        with open("daftar_pustaka.json", "r", encoding="utf-8") as f:
+        with open(JSON_PATH, "r", encoding="utf-8") as f:
             daftar_pustaka = json.load(f)
     except FileNotFoundError:
         daftar_pustaka = []
@@ -183,7 +186,7 @@ def masukan_data():
 ┗━━━━━➤  ''')
         print('''
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
-┃ Masukan Nama Penulis [Format : Last name, First name (e.g. Prasetya, Erdi)] ┃
+┃ Masukan Nama Editor [Format : Last name, First name (e.g. Prasetya, Erdi)]  ┃
 ┗━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛''')
         while True:
             namaeditor = input(f"    ╰[ Editor {len(editors)+1} ]──> ")
@@ -193,7 +196,7 @@ def masukan_data():
             editors.append(namaeditor.title().strip())
             while True:
                 tambaheditor = input('''  ╭────────────────────────────────────────────╮
-┏━┥  Apakah ingin menambah Editor lain? (y/n) │
+┏━┥  Apakah ingin menambah Editor lain? (y/n)  │
 ┃ ╰────────────────────────────────────────────╯
 ┗━━━━━➤  ''').lower().strip()
                 if tambaheditor == "y":
@@ -349,23 +352,31 @@ def ubah_data():
 
         elif pilihan == "2":
             authors_baru = []
-            print("Masukkan ulang daftar penulis:")
+            print("Masukkan ulang daftar penulis [Last name, First name (e.g. Prasetya, Erdi)]:")
             while True:
                 nama = input(f'''  ╭─────────────────────╮
-┏━┥  Penulis {len(authors_baru)+1} │
+┏━┥      Penulis {len(authors_baru)+1}      │
 ┃ ╰─────────────────────╯
 ┗━━━━━➤  ''').strip()
                 if not nama:
                     print("Nama tidak boleh kosong.")
                     continue
                 authors_baru.append(nama.title())
-                lagi = input('''  ╭─────────────────────────────╮
+                while True:
+                    lagi = input('''  ╭─────────────────────────────╮
 ┏━┥  Tambahkan nama lain (y/n)  │
 ┃ ╰─────────────────────────────╯
 ┗━━━━━➤  ''').lower().strip()
+                    if lagi == "y":
+                        break
+                    elif lagi == "n":
+                        print("\nInput penulis selesai.\n")
+                        break
+                    else:
+                        print(Fore.RED + "Input tidak valid, ketik 'y' untuk menambah atau 'n' untuk selesai.\n")
                 if lagi == "n":
                     break
-            data["authors"] = authors_baru
+                data["authors"] = authors_baru
 
         elif pilihan == "3":
             try:
@@ -437,7 +448,7 @@ def ubah_data():
                 if ubah_editor == "y":
                     editors_baru = []
                     print('''  ╭─────────────────────────────────────────────────────────────╮
-┏━┥  Masukkan ulang daftar editor [format : last, first name])  │
+┏━┥  Masukkan ulang daftar editor [format : Last, First name])  │
 ┃ ╰─────────────────────────────────────────────────────────────╯
 ┗━━━━━➤  ''')
                     while True:
