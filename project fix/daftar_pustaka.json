@@ -4,8 +4,7 @@
         "style": "Vancouver",
         "judul": "Bisa ya seAsing itu",
         "authors": [
-            "Isan",
-            "Erlando, Faris"
+            "Palupi, Isan"
         ],
         "tahun": 2025,
         "jurnal": "",
@@ -397,5 +396,27 @@
         "chapter": "2",
         "link": "www.detik.com",
         "book": "buku indonesia"
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "APA",
+        "judul": "s",
+        "authors": [
+            "A",
+            "S",
+            "Kw"
+        ],
+        "tahun": 1111,
+        "jurnal": "acda",
+        "volume": "1",
+        "issue": "1",
+        "halaman": "11-11",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "http",
+        "book": ""
     }
 ]

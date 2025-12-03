@@ -1,20 +1,30 @@
-from tambahan import format_authors, format_akhir_awalinisial, format_awalinisial_akhir, format_et_al, format_et_al_lebihdari3, format_akhir_awalinisial_tanpakoma, format_tanpakoma_semua, format_edition, format_editors_et_al, format_tanpakoma_semuaeditor, format_editors_and, balik_semua_namaeditors
+# import modul tambahan, siapin fungsi format_vancouver, editor_vancouver,format_edition,format_editors_mla,format_IEEE,editor_IEEE,format_APA,format_MLA,format_HARVARD,editor_HARVARD,editor_APAbook,editor_booksectionAPA
+from tambahan import (
+    format_vancouver,
+    editor_vancouver,
+    format_edition,
+    format_editors_mla,
+    format_IEEE,
+    editor_IEEE,
+    format_APA,
+    format_MLA,
+    format_HARVARD,
+    editor_HARVARD,
+    editor_APAbook,
+    editor_booksectionAPA
+)
 
 def format_styles(data):
-    tipe_styles = data['style']
-    referensi = data['referensi']
+    tipe_styles = data['style'] #ambil nilai tipe stylenya dari kunci style
+    referensi = data['referensi'] #ambil nilai referensinya dari kunci referensi
 
+    #format standar issue sesuai kondisi, di baris 9 ini melakukan penomoran menggunakan tanda kurung jika data adalah nilai dari kunci issue
     issue_formatkurung = f"({data['issue']})" if data['issue'] else ""
     issue_formatNO = f"no. {data['issue']}," if data['issue'] else ""
-    if data['volume']:
+    if data['volume']: # format volume biasanya di gunakan di referensi journal/article
         volume_format = f"vol. {data['volume']},"
     else:
-        volume_format = ""
-
-    if data['link']:
-        link_format = f", {data['link']}"
-    else:
-        link_format = ""
+        volume_format = ""#klo data daftar pustaka nilai kuncinya itu kosong maka diisi kosong
         
     if data['city']:
         city_format = f"{data['city']}:"
@@ -27,7 +37,7 @@ def format_styles(data):
         hal_formatPP = ""
 
     if data['halaman']:
-        hal_formatP = f"{data['halaman']} p."
+        hal_formatP = f"p. {data['halaman']} p."
     else:
         hal_formatP = ""
 
@@ -43,42 +53,45 @@ def format_styles(data):
 
     if data['chapter']:
         chap_format = f"ch. {data['chapter']},"
+    else:
+        chap_format = ""
 
     edition_format = format_edition(data['edition'])
 
-    if referensi == "Journal/Article":
-        if tipe_styles == "APA":
-            return f"{format_akhir_awalinisial(data['authors'])}. {format_tahunkurung} {data['judul']}. {data['jurnal']}, {data['volume']}{issue_formatkurung} {data['halaman']}{link_format}."
+    if referensi == "Journal/Article": #jika referensi bernilai journal article
+        if tipe_styles == "APA": #jika referensi menggunakan gaya APA
+            # mengeluarkan nilai nama author sesuai format, tahun judul. sumber jurnal, terbit bagian berapa, subagian berapa, dari halaman berapa sampe brp. LINK atau ga DOI
+            return f"{format_APA(data['authors'])} {format_tahunkurung} {data['judul']}. \x1B[3m{data['jurnal']}\x1B[0m, {data['volume']}{issue_formatkurung}, {data['halaman']}. {data['link']}"
         elif tipe_styles == "IEEE":
-            return f"{format_awalinisial_akhir(data['authors'])}, \"{data['judul']},\" {data['jurnal']}, {volume_format}{issue_formatNO}{hal_formatPP} {data['tahun']}{link_format}."
+            return f"{format_IEEE(data['authors'])} \"{data['judul']},\" \x1B[3m{data['jurnal']}\x1B[0m, {volume_format}{issue_formatNO}{hal_formatPP}, {data['tahun']}. {data['link']}"
         elif tipe_styles == "MLA":
-            return f"{format_et_al(data['authors'])} \"{data['judul']}.\" {data['jurnal']}, {volume_format}{issue_formatNO}{data['tahun']}, {hal_formatPP}{link_format}."
+            return f"{format_MLA(data['authors'])} \"{data['judul']}.\" \x1B[3m{data['jurnal']}\x1B[0m, {volume_format}{issue_formatNO}{data['tahun']}, {hal_formatPP}. {data['link']}"
         elif tipe_styles == "Harvard":
-            return f"{format_et_al_lebihdari3(data['authors'])} {data['tahun']}, '{data['judul']}', \x1B[3m{data['jurnal']}\x1B[0m,{volume_format} {issue_formatNO} {hal_formatHH}{link_format}."
+            return f"{format_HARVARD(data['authors'])} {format_tahunkurung} {data['judul']}, \x1B[3m{data['jurnal']}\x1B[0m, {data['volume']}{issue_formatkurung} {data['halaman']}. {data['link']}"
         else:
-            return f"{format_akhir_awalinisial_tanpakoma(data['authors'])}. {data['judul']}. {data['jurnal']}. {data['tahun']};{data['volume']}{issue_formatkurung}:{data['halaman']}{link_format}."
+            return f"{format_vancouver(data['authors'])}. {data['judul']}. {data['jurnal']}. {data['tahun']};{data['volume']}{issue_formatkurung}:{data['halaman']}. {data['link']}"
 
     elif referensi == "Book":
         if tipe_styles == "APA":
-            return f"{format_authors(data['authors'])}. {format_tahunkurung} \x1B[3m{data['judul']}\x1B[0m ({balik_semua_namaeditors(data['editors'])};{edition_format} {volume_format}). {data['publisher']}{link_format}."
+            return f"{format_APA(data['authors'])} {format_tahunkurung} \x1B[3m{data['judul']}\x1B[0m ({editor_APAbook(data['editors'])}{edition_format} {volume_format}). {data['publisher']}. {data['link']}"
         elif tipe_styles == "IEEE":
-            return f"{format_awalinisial_akhir(data['authors'])}, \x1B[3m{data['judul']}\x1B[0m, {edition_format}{volume_format}. {city_format} {data['publisher']} {data['tahun']}{link_format}."
+            return f"{format_IEEE(data['authors'])} \"{data['judul']},\" {editor_IEEE(data['editors'])}{edition_format}{volume_format}. {city_format} {data['publisher']}, {data['tahun']}. {data['link']}"
         elif tipe_styles == "MLA":
-            return f"{format_et_al(data['authors'])} \x1B[3m{data['judul']}\x1B[0m. {format_editors_et_al(data['editors'])} {edition_format}{volume_format}{city_format} {data['publisher']}, {data['tahun']}{link_format}."
+            return f"{format_MLA(data['authors'])} \x1B[3m{data['judul']}\x1B[0m. {format_editors_mla(data['editors'])} {edition_format}{volume_format}{city_format} {data['publisher']}, {data['tahun']}. {data['link']}"
         elif tipe_styles == "Harvard":
-            return f"{format_akhir_awalinisial(data['authors'])} {format_tahunkurung} {data['judul']}. {edition_format} {format_editors_and(data['editors'])} {city_format} {data['publisher']}{link_format}."
+            return f"{format_HARVARD(data['authors'])} {format_tahunkurung} \x1B[3m{data['judul']}\x1B[0m. {edition_format} {editor_HARVARD(data['editors'])} {city_format} {data['publisher']}. {data['link']}"
         else:
-            return f"{format_tanpakoma_semua(data['authors'])}. {data['judul']}. {edition_format} {format_tanpakoma_semuaeditor(data['editors'])} {volume_format} {city_format} {data['publisher']}; {data['tahun']}. {hal_formatP}{link_format}"
+            return f"{format_vancouver(data['authors'])} {data['judul']}. {edition_format} {editor_vancouver(data['editors'])} {volume_format} {city_format} {data['publisher']}; {data['tahun']}. {hal_formatP} {data['link']}"
 
     else:
         if tipe_styles == "APA":
-            return f"{format_akhir_awalinisial(data['authors'])}. {format_tahunkurung} {data['judul']}. In {balik_semua_namaeditors(data['editors'])} \x1B[3m{data['book']}\x1B[0m ({edition_format} {volume_format} {hal_formatPP}). {data['publisher']}{link_format}"
+            return f"{format_APA(data['authors'])} {format_tahunkurung} {data['judul']}. In {editor_booksectionAPA(data['editors'])} \x1B[3m{data['book']}\x1B[0m ({edition_format} {volume_format} {hal_formatPP}). {data['publisher']}. {data['link']}"
         elif tipe_styles == "IEEE":
-            return f"{format_awalinisial_akhir(data['authors'])}, \"{data['judul']},\" in \x1B[3m{data['book']}\x1B[0m, {edition_format}{volume_format}{balik_semua_namaeditors(data['editors'])} {city_format} {data['publisher']}, {data['tahun']}, {chap_format} {hal_formatPP}{link_format}."
+            return f"{format_IEEE(data['authors'])} \"{data['judul']},\" in \x1B[3m{data['book']}\x1B[0m, {edition_format}{volume_format}{editor_IEEE(data['editors'])} {city_format} {data['publisher']}, {data['tahun']}, {chap_format} {hal_formatPP}. {data['link']}"
         elif tipe_styles == "MLA":
-            return f"{format_et_al(data['authors'])} \"{data['judul']}.\" \x1B[3m{data['book']}\x1B[0m, {format_editors_et_al(data['editors'])} {edition_format} {volume_format} {data['publisher']}, {data['tahun']}, {hal_formatPP}{link_format}."
+            return f"{format_MLA(data['authors'])} \"{data['judul']}.\" \x1B[3m{data['book']}\x1B[0m, {format_editors_mla(data['editors'])} {edition_format} {volume_format} {data['publisher']}, {data['tahun']}, {hal_formatPP}. {data['link']}"
         elif tipe_styles == "Harvard":
-            return f"{format_et_al_lebihdari3(data['authors'])} {format_tahunkurung} \"{data['judul']},\" in {balik_semua_namaeditors(data['editors'])} {data['book']}. {edition_format} {city_format} {data['publisher']}, {hal_formatPP}{link_format}."
+            return f"{format_HARVARD(data['authors'])} {format_tahunkurung} \"{data['judul']},\" in {editor_HARVARD(data['editors'])} {data['book']}. {edition_format} {city_format} {data['publisher']}, {hal_formatPP}. {data['link']}"
         else:
-            return f"{format_tanpakoma_semua(data['authors'])}. {data['judul']}. In: {format_tanpakoma_semuaeditor(data['editors'])} {data['book']}. {edition_format} {city_format} {data['publisher']}; {data['tahun']}. {hal_formatP}{link_format}."
+            return f"{format_vancouver(data['authors'])}. {data['judul']}. In: {editor_vancouver(data['editors'])} {data['book']}. {edition_format} {city_format} {data['publisher']}; {data['tahun']}. {hal_formatP}. {data['link']}"
 
