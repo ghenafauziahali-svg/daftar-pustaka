@@ -59,10 +59,10 @@ def pilih_referensi():
             else:
                 print(Fore.RED + "Masukan tidak valid! Pilih 1, 2, 3 atau 4\n")
         except ValueError:
-            print(Fore.RED + "Masukan Angka bukan huruf\n")
+            print(Fore.RED + "Masukan Angka yang valid\n")
 
 
-def masukan_style():
+def masukan_style(mode="menu utama"):
     styles = ["APA", "IEEE", "MLA", "Harvard", "Vancouver"]
     slicee = '│'
     print("="*100)
@@ -101,9 +101,12 @@ def masukan_style():
                 print(Fore.YELLOW + f"Style yang dipilih: {styles[pilihan-1]}")
                 return styles[pilihan-1]
             elif pilihan == 0:
-                layar()
-                pilih_referensi()
-                masukan_style()
+                if mode == "menu utama":
+                    layar()
+                    pilih_referensi()
+                    return masukan_style()
+                elif mode == "ubah":
+                    return "kembali"
             else:
                 print(Fore.RED + "Masukkan angka 1 sampai 5.")
         except ValueError:
@@ -159,7 +162,7 @@ def masukan_data():
 ┗━━━━━➤  '''))
             break
         except ValueError:
-            print("Tahun harus berupa angka")
+            print(Fore.RED + "Tahun harus berupa angka")
 
     halaman = (input('''  ╭─────────────────────╮
 ┏━┥  Halaman [from-to]  │
@@ -180,10 +183,11 @@ def masukan_data():
 ┃ ╰─────────╯
 ┗━━━━━➤  ''')
     elif tipe == "Book":
-        edition = input('''  ╭───────────╮
+        edition = (input('''  ╭───────────╮
 ┏━┥  Edition  │
 ┃ ╰───────────╯
-┗━━━━━➤  ''')
+┗━━━━━➤  '''))
+
         print('''
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ Masukan Nama Editor [Format : Last name, First name (e.g. Prasetya, Erdi)]  ┃
@@ -202,7 +206,7 @@ def masukan_data():
                 if tambaheditor == "y":
                     break
                 elif tambaheditor == "n":
-                    print("\nInput editor selesai.\n")
+                    print(Fore.GREEN + "\nInput editor selesai.\n")
                     break
                 else:
                     print(Fore.RED + "Input tidak valid, ketik 'y' untuk menambah atau 'n' untuk selesai.\n")
@@ -216,24 +220,25 @@ def masukan_data():
 ┗━━━━━➤  ''')
         publisher = input('''  ╭─────────────╮
 ┏━┥  Publisher  │
-┃ ╰── ──────────╯
+┃ ╰─────────────╯
 ┗━━━━━➤  ''')
     else:
         book = input('''  ╭────────╮
 ┏━┥  Book  │
 ┃ ╰────────╯
 ┗━━━━━➤  ''')
-        edition = input('''  ╭───────────╮
+        
+        edition = (input('''  ╭───────────╮
 ┏━┥  Edition  │
 ┃ ╰───────────╯
-┗━━━━━➤  ''')
+┗━━━━━➤  '''))
 
         print('''
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ Masukan Nama Editor [Format : Last name, First name (e.g. Prasetya, Erdi)]  ┃
 ┗━━━┯━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛''')
         while True:
-            namaeditor = input(f"[ Editor {len(editors_booksection)+1} ]──>")
+            namaeditor = input(f"[ Editor {len(editors_booksection)+1} ]──> ")
             if namaeditor.strip() == "":
                 break
 
@@ -262,10 +267,13 @@ def masukan_data():
 ┏━┥  Publisher  │
 ┃ ╰─────────────╯
 ┗━━━━━➤  ''')
-        chapter = input('''  ╭──────────────────╮
+
+        
+        chapter = (input('''  ╭──────────────────╮
 ┏━┥  Chapter Number  │
 ┃ ╰──────────────────╯
-┗━━━━━➤  ''')
+┗━━━━━➤  '''))
+
     link = input('''  ╭────────────────╮
 ┏━┥  Link URL/DOI  │
 ┃ ╰────────────────╯
@@ -308,18 +316,20 @@ def ubah_data():
         print(Fore.CYAN + list_hapus_data + '│')
     print(Fore.CYAN + '''└──────────────────────────────────────────────────────────────────────────────────┘'''+ Fore.RESET)
 
-    try:
-        index = int(input(Fore.YELLOW + '''
+    while True:
+        try:
+            index = int(input(Fore.YELLOW + '''
   ╭────────────────────────────────╮
 ┏━┥  Pilih Data yang ingin diubah  │
 ┃ ╰────────────────────────────────╯
 ┗━━━━━➤  ''' + Style.RESET_ALL)) - 1
-        if index < 0 or index >= len(daftar_pustaka):
-            print(Fore.RED + "Nomor tidak valid.\n")
-            return
-    except ValueError:
-        print(Fore.RED + "Masukkan angka yang valid.\n")
-        return
+            if 0 <= index < len(daftar_pustaka):
+                break
+            else:
+                print(Fore.RED + "Nomor tidak valid. Coba lagi!\n")
+        except ValueError:
+            print(Fore.RED + "Masukkan angka yang valid, bukan huruf!\n")
+            
 
     data = daftar_pustaka[index]
     print(Fore.MAGENTA + f"\nMengubah data: {data['judul']} ({data['referensi']})\n")
@@ -332,10 +342,10 @@ def ubah_data():
 ┝━> {Fore.CYAN + f'[1] Judul' + Fore.RESET + Fore.MAGENTA}                                          │ Ubah Judul                │
 ┝━> {Fore.CYAN + f'[2] Penulis' + Fore.RESET + Fore.MAGENTA}                                        │ Ubah Penulis              │
 ┝━> {Fore.CYAN + f'[3] Tahun' + Fore.RESET + Fore.MAGENTA}                                          │ Ubah Tahun                │
-┝━> {Fore.CYAN + f'[4] Volume/Issue/Halaman' + Fore.RESET + Fore.MAGENTA}                           │ Ubah Volume/Issue/Halaman │
+┝━> {Fore.CYAN + f'[4] Volume/Halaman' + Fore.RESET + Fore.MAGENTA}                                 │ Ubah Volume/Issue/Halaman │
 ┝━> {Fore.CYAN + f'[5] Style' + Fore.RESET + Fore.MAGENTA}                                          │ Ubah Style                │
 ┝━> {Fore.CYAN + f'[6] Informasi Tambahan (tergantung tipe referensi)' + Fore.RESET + Fore.MAGENTA} │ Ubah Tambahan             │
-┝━> {Fore.CYAN + f'[7] Link' + Fore.RESET + Fore.MAGENTA}                                           │ Ubah Link                 │
+┝━> {Fore.CYAN + f'[7] URL/DOI' + Fore.RESET + Fore.MAGENTA}                                        │ Ubah URL/DOI              │
 ┝━> {Fore.CYAN + f'[8] Selesai' + Fore.RESET + Fore.MAGENTA}                                        │ Keluar Program            │
 └──────────────────────────────────────────────────────┴───────────────────────────┘''')
 
@@ -379,13 +389,15 @@ def ubah_data():
                 data["authors"] = authors_baru
 
         elif pilihan == "3":
-            try:
-                data["tahun"] = int(input('''  ╭───────────────────────╮
+            while True:
+                try:
+                    data["tahun"] = int(input('''  ╭───────────────────────╮
 ┏━┥  Masukkan Tahun Baru  │
 ┃ ╰───────────────────────╯
 ┗━━━━━➤  '''))
-            except ValueError:
-                print("Tahun harus berupa angka.")
+                    break
+                except ValueError:
+                    print("Tahun harus berupa angka.")
 
         elif pilihan == "4":
             volume_baru = input('''  ╭───────────────╮
@@ -394,12 +406,7 @@ def ubah_data():
 ┗━━━━━➤  ''').strip()
             if volume_baru:
                 data['volume'] = volume_baru
-            issue_baru = input('''  ╭──────────────╮
-┏━┥  Issue Baru  │
-┃ ╰──────────────╯
-┗━━━━━➤  ''').strip()
-            if issue_baru:
-                data['issue'] = issue_baru
+            
             hal_baru = input('''  ╭────────────────╮
 ┏━┥  Halaman Baru  │
 ┃ ╰────────────────╯
@@ -408,7 +415,10 @@ def ubah_data():
                 data['halaman'] = hal_baru
 
         elif pilihan == "5":
-            data["style"] = masukan_style()
+            hasil_style = masukan_style(mode="ubah")
+            if hasil_style == "kembali":
+                continue
+            data['style'] = hasil_style
 
         elif pilihan == "6":
             if data["referensi"] == "Journal/Article":
@@ -418,6 +428,13 @@ def ubah_data():
 ┗━━━━━➤  ''').strip()
                 if jurnal_baru:
                     data["jurnal"] = jurnal_baru
+
+                issue_baru = input('''  ╭──────────────╮
+┏━┥  Issue Baru  │
+┃ ╰──────────────╯
+┗━━━━━➤  ''').strip()
+                if issue_baru:
+                    data['issue'] = issue_baru
 
             elif data["referensi"] == "Book":
                 edition_baru = input(f'''  ╭────────────────╮
@@ -441,33 +458,50 @@ def ubah_data():
                 if pub_baru:
                     data["publisher"] = pub_baru
                 
-                ubah_editor = input('''  ╭──────────────────────────────────────────────╮
+                while True:
+                    ubah_editor = input('''  ╭──────────────────────────────────────────────╮
 ┏━┥  Apakah ingin mengubah daftar editor? (y/n)  │
 ┃ ╰──────────────────────────────────────────────╯
 ┗━━━━━➤  ''').lower().strip()
-                if ubah_editor == "y":
-                    editors_baru = []
-                    print('''  ╭─────────────────────────────────────────────────────────────╮
+                    if ubah_editor == "y":
+                        editors_baru = []
+                        print('''  ╭─────────────────────────────────────────────────────────────╮
 ┏━┥  Masukkan ulang daftar editor [format : Last, First name])  │
 ┃ ╰─────────────────────────────────────────────────────────────╯
 ┗━━━━━➤  ''')
-                    while True:
-                        nama = input(f'''  ╭────────────────────────────────╮
+            
+                        while True:
+                            nama = input(f'''  ╭────────────────────────────────╮
 ┏━┥  Editor {len(editors_baru)+1}  │
 ┃ ╰────────────────────────────────╯
 ┗━━━━━➤  ''').strip()
-                        if not nama:
-                            break
-                        editors_baru.append(nama.title())
-                        lagi = input('''  ╭──────────────────────────────╮
+                            if not nama:
+                                break
+                            editors_baru.append(nama.title())
+                            while True:
+                                lagi = input('''  ╭──────────────────────────────╮
 ┏━┥  Tambah editor lain? (y/n)}  │
 ┃ ╰──────────────────────────────╯
 ┗━━━━━➤  ''').lower().strip()
-                        if lagi == "n":
-                            break
-                    if editors_baru:
-                        data["editors"] = editors_baru
+                                if lagi == "y":
+                                    break
+                                elif lagi == "n":
+                                    print("input editor baru selesai")
+                                    break
+                                else:
+                                    print("masukan huruf y atau n")
+                            if lagi == "n":
+                                break
+                        if editors_baru:
+                            data["editors"] = editors_baru
+                        break
 
+                    elif ubah_editor == "n":
+                        print("editor tidak diubah")
+                        break
+                    else:
+                        print("masukan tidak valid")
+                        continue
 
             elif data["referensi"] == "Book Section":
                 book_baru = input(f'''  ╭───────────────────────────────────────────╮
@@ -504,38 +538,55 @@ def ubah_data():
 ┗━━━━━➤  ''').strip()
                 if pub_baru:
                     data["publisher"] = pub_baru
-
-                ubah_editor = input('''  ╭──────────────────────────────────────────────╮
+  
+                while True:
+                    ubah_editor = input('''  ╭──────────────────────────────────────────────╮
 ┏━┥  Apakah ingin mengubah daftar editor? (y/n)  │
 ┃ ╰──────────────────────────────────────────────╯
 ┗━━━━━➤  ''').lower().strip()
-                if ubah_editor == "y":
-                    editors_baru = []
-                    print('''  ╭────────────────────────────────────────────────────────────╮
-┏━┥  Masukkan ulang daftar editor [Format : last, first name]  │
-┃ ╰────────────────────────────────────────────────────────────╯
+                    if ubah_editor == "y":
+                        editors_baru = []
+                        print('''  ╭─────────────────────────────────────────────────────────────╮
+┏━┥  Masukkan ulang daftar editor [format : Last, First name])  │
+┃ ╰─────────────────────────────────────────────────────────────╯
 ┗━━━━━➤  ''')
-                    while True:
-                        nama = input(f'''  ╭────────────────────────────────╮
+                        while True:
+                            nama = input(f'''  ╭────────────────────────────────╮
 ┏━┥  Editor {len(editors_baru)+1}  │
 ┃ ╰────────────────────────────────╯
 ┗━━━━━➤  ''').strip()
-                        if not nama:
-                            break
-                        editors_baru.append(nama.title())
-                        lagi = input('''  ╭─────────────────────────────╮
-┏━┥  Tambah editor lain? (y/n)  │
-┃ ╰─────────────────────────────╯
+                            if not nama:
+                                break
+                            editors_baru.append(nama.title())
+                            while True:
+                                lagi = input('''  ╭──────────────────────────────╮
+┏━┥  Tambah editor lain? (y/n)}  │
+┃ ╰──────────────────────────────╯
 ┗━━━━━➤  ''').lower().strip()
-                        if lagi == "n":
-                            break
-                    if editors_baru:
-                        data["editors"] = editors_baru
+                                if lagi == "y":
+                                    break
+                                elif lagi == "n":
+                                    print("input editor baru selesai")
+                                    break
+                                else:
+                                    print("masukan huruf y atau n")
+                            if lagi == "n":
+                                break
+                        if editors_baru:
+                            data["editors"] = editors_baru
+                        break
 
+                    elif ubah_editor == "n":
+                        print("editor tidak diubah")
+                        break
+                    else:
+                        print("masukan tidak valid")
+                        continue
+                
         elif pilihan == "7":
-            data["link"] = input('''  ╭──────────────────────╮
-┏━┥  Masukkan Link Baru  │
-┃ ╰──────────────────────╯
+            data["link"] = input('''  ╭─────────────────────────╮
+┏━┥  Masukkan URL/DOI Baru  │
+┃ ╰─────────────────────────╯
 ┗━━━━━➤  ''').strip()
 
         elif pilihan == "8":
@@ -620,5 +671,7 @@ def lihat_daftar():
     for style, daftar in kelompok.items():
         print("─"*50 + f" {style.upper()} " + "─"*50)
         for i, data in enumerate(daftar, start=1):
-            print(f"{i}. {format_styles(data)}\n")
-
+            if style == "IEEE":
+                print(f"[{i}]. {format_styles(data)}\n")
+            else:
+                print(f"{i}. {format_styles(data)}\n")

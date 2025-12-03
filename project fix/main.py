@@ -1,7 +1,6 @@
 from tambahan import layar
 import os
 from dafpus_manager import masukan_data, lihat_daftar, ubah_data, hapus_data, muat_data, simpan_data
-from format_style import format_styles
 from colorama import Fore, Style, Back, init
 
 init(autoreset=True)

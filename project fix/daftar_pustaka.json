@@ -1,7 +1,7 @@
 [
     {
         "referensi": "Journal/Article",
-        "style": "Vancouver",
+        "style": "IEEE",
         "judul": "Bisa ya seAsing itu",
         "authors": [
             "Isan",
@@ -23,83 +23,442 @@
     {
         "referensi": "Journal/Article",
         "style": "APA",
-        "judul": "hari ini hari senin",
+        "judul": "judul jurnal artikelnya",
+        "authors": [
+            "Ali, Ghena Fauziah",
+            "Ali, Amelia Saidah",
+            "Prasetyo, Raiz Erda",
+            "Arsya"
+        ],
+        "tahun": 2022,
+        "jurnal": "jurnal ",
+        "volume": "1",
+        "issue": "2",
+        "halaman": "12-22",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "www.ddfd.com",
+        "book": ""
+    },
+    {
+        "referensi": "Book",
+        "style": "APA",
+        "judul": "judul buku",
+        "authors": [
+            "Ali, Ghena Fauziah",
+            "Rinekso, Irene Cahya",
+            "Prassetyo, Raiz Erda"
+        ],
+        "tahun": 2022,
+        "jurnal": "",
+        "volume": "1",
+        "issue": "",
+        "halaman": "12",
+        "edition": 2,
+        "editors": [
+            "Naima, Rajwa",
+            "Dewi, Rachmalina Latifa",
+            "Beomgyu, Choi",
+            "Taehyun, Kang"
+        ],
+        "city": "jakarta",
+        "publisher": "Detik",
+        "chapter": "",
+        "link": "www.detik.com",
+        "book": ""
+    },
+    {
+        "referensi": "Book Section",
+        "style": "APA",
+        "judul": "judul bab bukunya",
+        "authors": [
+            "Ali, Ghena Fauziah",
+            "Ali, Amelia Saidah",
+            "Arsya",
+            "Umar, Ali"
+        ],
+        "tahun": 2022,
+        "jurnal": "",
+        "volume": "2",
+        "issue": "",
+        "halaman": "12-22",
+        "edition": 2,
+        "editors": [
+            "Beomgyu, Choi",
+            "Kamal, Hueningkai Kai",
+            "Taehyun, Kang",
+            "Prasetyo, Raiz Erda"
+        ],
+        "city": "jakarta",
+        "publisher": "detik",
+        "chapter": 1,
+        "link": "www. eee",
+        "book": "judul bukunya"
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "IEEE",
+        "judul": "judurl jurnal ieee",
+        "authors": [
+            "Ali, Ghena Fauziah",
+            "Ali, Amelia Saidah",
+            "Andrean, Maulana Arsya",
+            "Prasestyo, Rais Erda",
+            "Umar, Ali",
+            "Amelia, Rosy",
+            "Wulandari, Dyah"
+        ],
+        "tahun": 2022,
+        "jurnal": "jurnal ieee",
+        "volume": "1",
+        "issue": "2",
+        "halaman": "12-22",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "https.ieee.org",
+        "book": ""
+    },
+    {
+        "referensi": "Book",
+        "style": "IEEE",
+        "judul": "judul buku ieee",
+        "authors": [
+            "Ali, Ghena Fauziah",
+            "Prasetyo, Rais Erda",
+            "Rinekso, Irene Cahya",
+            "Umar, Ali"
+        ],
+        "tahun": 2022,
+        "jurnal": "",
+        "volume": "2",
+        "issue": "",
+        "halaman": "12-12",
+        "edition": 2,
+        "editors": [
+            "Beomgyu, Choi",
+            "Soobin, Choi",
+            "Kamal, Hueningkai Kai",
+            "Purnama, Khamalia Icha"
+        ],
+        "city": "padang",
+        "publisher": "detik",
+        "chapter": "",
+        "link": "detik.com",
+        "book": ""
+    },
+    {
+        "referensi": "Book Section",
+        "style": "IEEE",
+        "judul": "judul bab buku ieee",
+        "authors": [
+            "Ali, Ghena Fauziah",
+            "Prasetyo, Raiz Erda",
+            "Umar, Ali"
+        ],
+        "tahun": 2022,
+        "jurnal": "",
+        "volume": "2",
+        "issue": "",
+        "halaman": "12-22",
+        "edition": 2,
+        "editors": [
+            "Ali, Amelia Saidah",
+            "Umar, Ali"
+        ],
+        "city": "jakarta",
+        "publisher": "detik",
+        "chapter": 2,
+        "link": "www.detik.com",
+        "book": "buku ieee style"
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "MLA",
+        "judul": "judul jurnal mla",
         "authors": [
             "Ali, Ghena Fauziah",
             "Prasetyo, Raiz Erda",
             "Arsya"
         ],
-        "tahun": 2022,
-        "jurnal": "jurnal dasar pemrograman",
-        "volume": "3",
-        "issue": "3",
-        "halaman": "12-19",
+        "tahun": 2016,
+        "jurnal": "jurnal mla",
+        "volume": "2",
+        "issue": "2",
+        "halaman": "12",
         "edition": "",
         "editors": [],
         "city": "",
         "publisher": "",
         "chapter": "",
-        "link": "https://ghena",
+        "link": "www.mla.org",
         "book": ""
     },
     {
-        "referensi": "Journal/Article",
-        "style": "IEEE",
-        "judul": "hari ini hari selasa",
+        "referensi": "Book",
+        "style": "MLA",
+        "judul": "judul buku mla",
         "authors": [
             "Ali, Ghena Fauziah",
-            "Arsya",
-            "Naima, Rajwa"
+            "Ali, Amelia Saidah",
+            "Prasetyo, Raiz Erda",
+            "Arsya"
         ],
         "tahun": 2022,
-        "jurnal": "jurnal daspem",
-        "volume": "3",
+        "jurnal": "",
+        "volume": "2",
         "issue": "",
-        "halaman": "12-15",
+        "halaman": "12-22",
+        "edition": 2,
+        "editors": [
+            "Umar, Ali",
+            "Dewi, Rachmalina Latifa"
+        ],
+        "city": "jakarta",
+        "publisher": "detik",
+        "chapter": "",
+        "link": "https://detik.com",
+        "book": ""
+    },
+    {
+        "referensi": "Book Section",
+        "style": "MLA",
+        "judul": "judul bab buku mla",
+        "authors": [
+            "Ali, Ghena Fauziah",
+            "Ali, Amelia Saidah"
+        ],
+        "tahun": 2021,
+        "jurnal": "",
+        "volume": "2",
+        "issue": "",
+        "halaman": "12-22",
+        "edition": 3,
+        "editors": [
+            "Ali, Ghena Fauziah",
+            "Prasetyo, Rais Erda"
+        ],
+        "city": "jkarta",
+        "publisher": "detik",
+        "chapter": 2,
+        "link": "www.mla.com",
+        "book": "buku mla style "
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "Harvard",
+        "judul": "judul harvard style",
+        "authors": [
+            "Ali, Ghena Fauziah",
+            "Ali, Amelia Saidah",
+            "Prasetyo, Raiz Erda",
+            "Arsya"
+        ],
+        "tahun": 2022,
+        "jurnal": "jurnal harvard style",
+        "volume": "1",
+        "issue": "2",
+        "halaman": "12",
         "edition": "",
         "editors": [],
         "city": "",
         "publisher": "",
+        "chapter": "",
+        "link": "www.harvard",
+        "book": ""
+    },
+    {
+        "referensi": "Book",
+        "style": "Harvard",
+        "judul": "judul buku harvard",
+        "authors": [
+            "Ali, Umar",
+            "Ali, Ghena Fauziah Ali",
+            "Ali, Amelia Saidah"
+        ],
+        "tahun": 2022,
+        "jurnal": "",
+        "volume": "2",
+        "issue": "",
+        "halaman": "12",
+        "edition": 1,
+        "editors": [
+            "Ali, Ghena Fauziah",
+            "Prasetyo, Raiz Erda",
+            "Umar, Ali"
+        ],
+        "city": "jakarta",
+        "publisher": "detik",
+        "chapter": "",
+        "link": "www.wwww.www",
+        "book": ""
+    },
+    {
+        "referensi": "Book Section",
+        "style": "Harvard",
+        "judul": "judul bab buku harvard",
+        "authors": [
+            "Ali, Ghena Fauziah",
+            "Ali, Amelia Saidah",
+            "Prasetyo, Raiz Erda",
+            "Arsya"
+        ],
+        "tahun": 2022,
+        "jurnal": "",
+        "volume": "1",
+        "issue": "",
+        "halaman": "12-22",
+        "edition": 4,
+        "editors": [
+            "Ali, Ghena Fauziah",
+            "Umar, Ali",
+            "Kamal, Huening Kai",
+            "Beomgyu, Choi",
+            "Umar, Ali"
+        ],
+        "city": "jakarta",
+        "publisher": "detik",
+        "chapter": 2,
+        "link": "www.wwww",
+        "book": "buku harvard style"
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "Vancouver",
+        "judul": "judul vancouver style",
+        "authors": [
+            "Ali, Ghena Fauziah",
+            "Ali, Amelia Saidah",
+            "Wulandari, Rysmi"
+        ],
+        "tahun": 2021,
+        "jurnal": "jurnal vancouver style",
+        "volume": "1",
+        "issue": "2",
+        "halaman": "12-22",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "www.www",
+        "book": ""
+    },
+    {
+        "referensi": "Book",
+        "style": "Vancouver",
+        "judul": "judul buku vancouver",
+        "authors": [
+            "Ali, Ghena Fauziah",
+            "Ali, Amelia Saidah",
+            "Umar, Ali",
+            "Prasetyo, Raiz Erda",
+            "Arsya",
+            "Irene",
+            "Anton"
+        ],
+        "tahun": 2022,
+        "jurnal": "",
+        "volume": "1",
+        "issue": "",
+        "halaman": "122-222",
+        "edition": 2,
+        "editors": [
+            "Ali, Ghena Fauziah",
+            "Prasetyo, Raiz Erdaaa",
+            "Ali, Amelia Saidah",
+            "Umar, Ali"
+        ],
+        "city": "jakarta",
+        "publisher": "detik",
+        "chapter": "",
+        "link": "www.www",
+        "book": ""
+    },
+    {
+        "referensi": "Book Section",
+        "style": "Vancouver",
+        "judul": "judul bab buku harvard",
+        "authors": [
+            "Ali, Ghena Fauziah",
+            "Ali, Amelia Saidah",
+            "Beomgyu, Choi",
+            "Taehyun, Kang"
+        ],
+        "tahun": 2022,
+        "jurnal": "",
+        "volume": "2",
+        "issue": "",
+        "halaman": "12-22",
+        "edition": 2,
+        "editors": [
+            "Ali, Amelia Saidah",
+            "Amelia, Rosy",
+            "Andrean, Arsya Maula"
+        ],
+        "city": "jakarta",
+        "publisher": "detik",
+        "chapter": 2,
+        "link": "wwww.wwww",
+        "book": "buku vancouver style"
+    },
+    {
+        "referensi": "Book",
+        "style": "IEEE",
+        "judul": "df",
+        "authors": [
+            "Ss",
+            "Asasa,Aks"
+        ],
+        "tahun": 2,
+        "jurnal": "",
+        "volume": "2",
+        "issue": "",
+        "halaman": "1",
+        "edition": "1w",
+        "editors": [],
+        "city": "2",
+        "publisher": "w",
         "chapter": "",
         "link": "",
         "book": ""
     },
     {
-        "referensi": "Journal/Article",
-        "style": "MLA",
-        "judul": "hari ini hari rabu",
+        "referensi": "Book Section",
+        "style": "IEEE",
+        "judul": "juudl",
         "authors": [
-            "Ali, Ghena Fauziah",
-            "Prasetyo, Raiz Erda",
-            "Arsya",
-            "Maulana, Arsya Andrean"
-        ],
-        "tahun": 2022,
-        "jurnal": "jurnal dasar",
-        "volume": "",
-        "issue": "",
-        "halaman": "12-33",
-        "edition": "",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "https://ghna",
-        "book": ""
-    },
-    {
-        "referensi": "Journal/Article",
-        "style": "Harvard",
-        "judul": "hari ini hari kamis",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Prasetyo, Raiz Erda",
-            "Maulana, Arsya Andrean",
             "Ghena"
         ],
-        "tahun": 2022,
-        "jurnal": "jurnal dasar",
-        "volume": "3",
+        "tahun": 2121,
+        "jurnal": "",
+        "volume": "1",
+        "issue": "",
+        "halaman": "12",
+        "edition": "2",
+        "editors": [],
+        "city": "c",
+        "publisher": "",
+        "chapter": 1,
+        "link": "",
+        "book": "buku"
+    },
+    {
+        "referensi": "Book",
+        "style": "MLA",
+        "judul": "jdul",
+        "authors": [
+            "Ghena",
+            "Fauziah"
+        ],
+        "tahun": 2,
+        "jurnal": "",
+        "volume": "2",
         "issue": "",
         "halaman": "12",
         "edition": "",
@@ -107,24 +466,44 @@
         "city": "",
         "publisher": "",
         "chapter": "",
-        "link": "https://gggg",
+        "link": "",
         "book": ""
     },
     {
-        "referensi": "Journal/Article",
-        "style": "Vancouver",
-        "judul": "hari ini hari jumat",
+        "referensi": "Book Section",
+        "style": "MLA",
+        "judul": "j",
         "authors": [
-            "Ali, Ghena Fauziah",
-            "Maulana, Arsya Andrean",
-            "Prasetyo, Raiz Erda",
-            "Raiz"
+            "W",
+            "S",
+            "W",
+            "A"
         ],
-        "tahun": 2022,
-        "jurnal": "jurnal dasar",
-        "volume": "5",
-        "issue": "1",
-        "halaman": "10-111",
+        "tahun": 2,
+        "jurnal": "",
+        "volume": "1",
+        "issue": "",
+        "halaman": "",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": "1"
+    },
+    {
+        "referensi": "Book Section",
+        "style": "MLA",
+        "judul": "",
+        "authors": [
+            "D"
+        ],
+        "tahun": 23,
+        "jurnal": "",
+        "volume": "",
+        "issue": "",
+        "halaman": "",
         "edition": "",
         "editors": [],
         "city": "",
@@ -135,267 +514,82 @@
     },
     {
         "referensi": "Book",
-        "style": "APA",
-        "judul": "hari ini tanggal 1",
+        "style": "Harvard",
+        "judul": "judul",
         "authors": [
-            "Ali, Ghena Fauziah",
-            "Prasetyo, Raiz Erda",
-            "Rinekso, Irene Cahya",
-            "Dewi, Rachmalina Latifa",
-            "Arsya"
+            "Asa"
         ],
-        "tahun": 2022,
-        "jurnal": "",
-        "volume": "3",
-        "issue": "",
-        "halaman": "100-1111",
-        "edition": "1",
-        "editors": [
-            "Yeonjun, Choi",
-            "Beomgyu, Choi",
-            "Kyojuro, Rengoku",
-            "Umar, Ali"
-        ],
-        "city": "jakarta",
-        "publisher": "Dermawan publish",
-        "chapter": "",
-        "link": "www.dermawan.com",
-        "book": ""
-    },
-    {
-        "referensi": "Book",
-        "style": "IEEE",
-        "judul": "hari ini tanggal 2",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Prasetyo, Raiz Erda",
-            "Maulana, Arsya Andrean",
-            "Umar, Ali"
-        ],
-        "tahun": 2022,
+        "tahun": 111,
         "jurnal": "",
         "volume": "2",
         "issue": "",
-        "halaman": "12-199",
+        "halaman": "1",
         "edition": "2",
-        "editors": [
-            "Yeonjun, Choi",
-            "Beomgyu, Choi",
-            "Arsya"
-        ],
-        "city": "Jakarta",
-        "publisher": "Detik",
+        "editors": [],
+        "city": "",
+        "publisher": "",
         "chapter": "",
         "link": "",
         "book": ""
     },
     {
-        "referensi": "Book",
-        "style": "MLA",
-        "judul": "hari ini tanggal 3",
+        "referensi": "Book Section",
+        "style": "Harvard",
+        "judul": "ju",
         "authors": [
-            "Ali, Ghena Fauziah",
-            "Umar, Ali",
-            "Rengoku"
+            "D"
         ],
-        "tahun": 2022,
+        "tahun": 3,
+        "jurnal": "",
+        "volume": "3",
+        "issue": "",
+        "halaman": "3",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": "f"
+    },
+    {
+        "referensi": "Book",
+        "style": "Vancouver",
+        "judul": "judul",
+        "authors": [
+            "As"
+        ],
+        "tahun": 3,
+        "jurnal": "",
+        "volume": "3",
+        "issue": "",
+        "halaman": "2",
+        "edition": "w",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": ""
+    },
+    {
+        "referensi": "Book Section",
+        "style": "Vancouver",
+        "judul": "",
+        "authors": [
+            "As"
+        ],
+        "tahun": 2,
         "jurnal": "",
         "volume": "2",
         "issue": "",
-        "halaman": "100-111",
-        "edition": "3",
-        "editors": [
-            "Parsetya, Raiz Erda",
-            "Soobin, Choi",
-            "Cahya, Irene"
-        ],
-        "city": "bekasi",
-        "publisher": "detik",
-        "chapter": "",
-        "link": "www.detik.org",
-        "book": ""
-    },
-    {
-        "referensi": "Book",
-        "style": "Harvard",
-        "judul": "hari ini tanggal 4",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Ali, Amelia Saidah",
-            "Arsya"
-        ],
-        "tahun": 2029,
-        "jurnal": "",
-        "volume": "3",
-        "issue": "",
-        "halaman": "12-22",
-        "edition": "4",
-        "editors": [
-            "Prasetyo, Raiz Erda",
-            "Maulana, Arsya Andrean",
-            "Umar, Ali"
-        ],
-        "city": "jakarta",
-        "publisher": "detik",
-        "chapter": "",
-        "link": "",
-        "book": ""
-    },
-    {
-        "referensi": "Book",
-        "style": "Vancouver",
-        "judul": "hari ini tanggal 5",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Ali, Amelia Saidah",
-            "Raiz"
-        ],
-        "tahun": 2029,
-        "jurnal": "",
-        "volume": "3",
-        "issue": "",
-        "halaman": "12-22",
-        "edition": "12",
-        "editors": [
-            "Prasetyo, Raiz Erda",
-            "Arsya",
-            "Umar, Ali"
-        ],
-        "city": "jakarta",
-        "publisher": "detik",
-        "chapter": "",
-        "link": "",
-        "book": ""
-    },
-    {
-        "referensi": "Book Section",
-        "style": "APA",
-        "judul": "hari ini bulan januari",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Umar, Ali",
-            "Arsya",
-            "Raiz"
-        ],
-        "tahun": 2022,
-        "jurnal": "",
-        "volume": "1",
-        "issue": "",
-        "halaman": "12-24",
-        "edition": "21",
-        "editors": [
-            "Ali, Amelia Saidah",
-            "Prasetyo, Raiz Erda",
-            "Mestiati"
-        ],
-        "city": "padang",
-        "publisher": "detik",
-        "chapter": "2",
-        "link": "www.www.www.com",
-        "book": "buku indonesia"
-    },
-    {
-        "referensi": "Book Section",
-        "style": "IEEE",
-        "judul": "hari ini bulan feb",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Ali, Amelia Saidah",
-            "Umar, Ali"
-        ],
-        "tahun": 2023,
-        "jurnal": "",
-        "volume": "1",
-        "issue": "",
-        "halaman": "12-22",
-        "edition": "100",
-        "editors": [
-            "Umar, Ali",
-            "Prsaeto, Raiz Erda",
-            "Arsya"
-        ],
-        "city": "wonogiri",
-        "publisher": "detik",
-        "chapter": "3",
-        "link": "https://ghenadetik.com",
-        "book": "buku indonesia"
-    },
-    {
-        "referensi": "Book Section",
-        "style": "MLA",
-        "judul": "hari ini bulan maret",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Malonda, Danil",
-            "Adreino, Nadip"
-        ],
-        "tahun": 2022,
-        "jurnal": "",
-        "volume": "3",
-        "issue": "",
-        "halaman": "12-22",
-        "edition": "33",
-        "editors": [
-            "Umar, Ali",
-            "Maulana, Arsya Andrean",
-            "Prasetyo, Raiz Erda"
-        ],
-        "city": "blora",
-        "publisher": "detik",
-        "chapter": "4",
-        "link": "",
-        "book": "buku indonesia"
-    },
-    {
-        "referensi": "Book Section",
-        "style": "Harvard",
-        "judul": "hari ini bulan april",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Umar, Ali",
-            "Raiz"
-        ],
-        "tahun": 2023,
-        "jurnal": "",
-        "volume": "3",
-        "issue": "",
-        "halaman": "12-222",
-        "edition": "1128",
-        "editors": [
-            "Ali, Amelia Saidah",
-            "Umar, Ali",
-            "Danil"
-        ],
-        "city": "bekasi",
+        "halaman": "3",
+        "edition": "2",
+        "editors": [],
+        "city": "",
         "publisher": "",
-        "chapter": "2",
+        "chapter": "",
         "link": "",
-        "book": "buku indonesia"
-    },
-    {
-        "referensi": "Book Section",
-        "style": "Vancouver",
-        "judul": "hari ini bulan mei",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Cahya, Irene",
-            "Prasetyo, Raiz Erda"
-        ],
-        "tahun": 2022,
-        "jurnal": "",
-        "volume": "3",
-        "issue": "",
-        "halaman": "12-32",
-        "edition": "1234",
-        "editors": [
-            "Ali, Amelia Saidah",
-            "Prasetyo, Raiz Erda",
-            "Raiz"
-        ],
-        "city": "bukit tinggi",
-        "publisher": "detik",
-        "chapter": "2",
-        "link": "www.detik.com",
-        "book": "buku indonesia"
+        "book": "3"
     }
 ]
