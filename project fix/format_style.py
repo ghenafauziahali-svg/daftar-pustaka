@@ -37,7 +37,7 @@ def format_styles(data):
         hal_formatPP = ""
 
     if data['halaman']:
-        hal_formatP = f"p. {data['halaman']} p."
+        hal_formatP = f"p. {data['halaman']}"
     else:
         hal_formatP = ""
 

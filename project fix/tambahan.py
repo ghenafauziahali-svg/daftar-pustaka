@@ -44,6 +44,15 @@ def editor_IEEE(editors):
     else:
         return f"{formatted} Eds.," # selain 1?  pakai Eds.,
 
+def editor_IEEE(editors):
+    formatted = format_IEEE(editors)
+    if not editors:
+        return ""
+    elif len(editors) == 1:
+        return f"{formatted} Ed.,"
+    else:
+        return f"{formatted} Eds.,"
+
 def format_et_al(authors):
     if len(authors) == 1:
         return authors[0]

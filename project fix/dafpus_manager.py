@@ -454,6 +454,13 @@ def ubah_data():
                 if issue_baru:
                     data['issue'] = issue_baru
 
+                issue_baru = input('''  ╭──────────────╮
+┏━┥  Issue Baru  │
+┃ ╰──────────────╯
+┗━━━━━➤  ''').strip()
+                if issue_baru:
+                    data['issue'] = issue_baru
+
             elif data["referensi"] == "Book":
                 edition_baru = input(f'''  ╭────────────────╮
 ┏━┥  Edition Baru  │
@@ -592,13 +599,14 @@ def ubah_data():
                         if editors_baru:
                             data["editors"] = editors_baru
                         break
+
                     elif ubah_editor == "n":
-                            print("editor tidak diubah")
-                            break
+                        print("editor tidak diubah")
+                        break
                     else:
                         print("masukan tidak valid")
                         continue
-
+                
         elif pilihan == "7":
             data["link"] = input('''  ╭─────────────────────────╮
 ┏━┥  Masukkan URL/DOI Baru  │
