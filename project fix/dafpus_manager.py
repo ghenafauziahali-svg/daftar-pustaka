@@ -180,15 +180,15 @@ def masukan_data(): #ini opsi 1 dari landing program (main)
         except ValueError:
             print(Fore.RED + "Tahun harus berupa angka")
     # dari haalaman berapa sampai ke berapa
-    halaman = (input('''  ╭─────────────────────╮
+    halaman = input('''  ╭─────────────────────╮
 ┏━┥  Halaman [from-to]  │
 ┃ ╰─────────────────────╯
-┗━━━━━➤  '''))
+┗━━━━━➤  ''')
     # ini bagian ke berapa di terbitkannya
-    volume = (input('''  ╭──────────╮
+    volume = input('''  ╭──────────╮
 ┏━┥  Volume  │
 ┃ ╰──────────╯
-┗━━━━━➤  '''))
+┗━━━━━➤  ''')
 
     if tipe == "Journal/Article":
         # nama jurnal
@@ -203,10 +203,10 @@ def masukan_data(): #ini opsi 1 dari landing program (main)
 ┗━━━━━➤  ''')
     elif tipe == "Book": #referensi dari buku
         #edisi keberapa
-        edition = (input('''  ╭───────────╮
+        edition = input('''  ╭───────────╮
 ┏━┥  Edition  │
 ┃ ╰───────────╯
-┗━━━━━➤  '''))
+┗━━━━━➤  ''')
         print('''
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ Masukan Nama Editor [Format : Last name, First name (e.g. Prasetya, Erdi)]  ┃
@@ -246,10 +246,10 @@ def masukan_data(): #ini opsi 1 dari landing program (main)
 ┏━┥  Book  │
 ┃ ╰────────╯
 ┗━━━━━➤  ''')
-        edition = (input('''  ╭───────────╮
+        edition = input('''  ╭───────────╮
 ┏━┥  Edition  │
 ┃ ╰───────────╯
-┗━━━━━➤  '''))
+┗━━━━━➤  ''')
 
         print('''
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
@@ -287,10 +287,10 @@ def masukan_data(): #ini opsi 1 dari landing program (main)
 ┃ ╰─────────────╯
 ┗━━━━━➤  ''')
         # nomor bab
-        chapter = (input('''  ╭──────────────────╮
+        chapter = input('''  ╭──────────────────╮
 ┏━┥  Chapter Number  │
 ┃ ╰──────────────────╯
-┗━━━━━➤  '''))
+┗━━━━━➤  ''')
     # sumber link
     link = input('''  ╭────────────────╮
 ┏━┥  Link URL/DOI  │
