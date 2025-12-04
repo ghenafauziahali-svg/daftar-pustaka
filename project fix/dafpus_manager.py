@@ -327,12 +327,12 @@ def ubah_data():
 ┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩''')
     for i, data in enumerate(daftar_pustaka, start=1):
         #i adalah nomor urut, {data['judul']}mengambil nilai judul di dictionary data, begitupun seterusnya
-        list_hapus_data =  f"┝━> [{i}] {data['judul']} ({data['tahun']}) - {data['referensi']} [{data['style']}]" 
+        list_ubah_data =  f"┝━> [{i}] {data['judul']} ({data['tahun']}) - {data['referensi']} [{data['style']}]" 
         for ckk in range(0,len(cek_panjangH)-1): #bikin perulangan sebanyak karakter cek_panjangH lalu di kurangi 1 agar bisa sejajar dengan header table aslinya
-            if len(list_hapus_data) == ckk:
+            if len(list_ubah_data) == ckk:
                 spasi = ' '
-                list_hapus_data += spasi
-        print(Fore.CYAN + list_hapus_data + '│')
+                list_ubah_data += spasi
+        print(Fore.CYAN + list_ubah_data + '│')
     print(Fore.CYAN + '''┝━> [0] Tidak jadi hehe 😁                                                         │''')
     print(Fore.CYAN + '''└──────────────────────────────────────────────────────────────────────────────────┘''')
 
