@@ -528,38 +528,159 @@ def ubah_data():
 
             # apakah nilai kunci referensi sama dengan nilai book section
             elif data["referensi"] == "Book Section":
+                #cek kondisi box
+                len_dataBook = data.get('book', '')
+                header = '  ╭───────────────────' #header box
+                headerEND = '╮' # end header box
+                footer = '┃ ╰───────────────────'
+                footerEND = '╯'
+                space = ' ' #untuk mengatur jarak antra box dengan text
+                c = 2 # penambahan spasi
+                for i in range(0, 50): # bikin perulangan maksimal sampai 49
+                    if len(len_dataBook) == i: #jika jumlah karakter dari nilai kuncinya book (14) itu sama dengan perulangan, maka lanjut baris 541
+                        if len(len_dataBook) >= 1: #jika panjang karakter dari nilai kuncinya book (14) lebih beasr sama dengan 1, maka header di tambah dengan string '-' untuk penyesuaian border
+                            h_f = '─'
+                            h_f += h_f*(len(len_dataBook)+c)
+                            header += h_f
+                            footer += h_f
+                            space *= c
+                        
+                        if len(len_dataBook) == 0: # klo jumlah karakter nilai kuncinya 0??? ganti variable char jadi default 0
+                            # jika kosong tampilannyaa normal
+                            char = "]  │"
+                            break # berhenti jan lanjut, klo lanjut malahhhan keubah
+
+                        char = "]" + space + "│"
+                        break
                 # mengambil nilai kunci book di dalem dictionary data, klo gada maka isi nilai kunci book jadi string kosong ''
-                book_baru = input(f'''  ╭───────────────────────────────────────────╮
-┏━┥  Judul buku baru [{data.get('book','')}]  │
-┃ ╰───────────────────────────────────────────╯
+                book_baru = input(f'''{header+headerEND}
+┏━┥  Judul buku baru [{len_dataBook+char}
+{footer+footerEND}
 ┗━━━━━➤  ''').strip()
                 if book_baru:
                     data["book"] = book_baru
 
-                chapter_baru = input(f'''  ╭───────────────────────────────────────────╮
-┏━┥  Chapter baru [{data.get('chapter','')}]  │
-┃ ╰───────────────────────────────────────────╯
+                len_dataChapter = data.get('chapter', '')
+                header = '  ╭───────────────────'
+                headerEND = '╮'
+                footer = '┃ ╰───────────────────'
+                footerEND = '╯'
+                space = ' '
+                c = 2
+                for i in range(0, 50):
+                    if len(len_dataChapter) == i:
+                        if len(len_dataChapter) == 0:
+                            # jika kosong tampilannyaa normal
+                            char = "]  │"
+                            break
+
+                        elif len(len_dataChapter) >= 1:
+                            h_f = '─'
+                            h_f += h_f * (len(len_dataChapter) - c)
+                            header += h_f
+                            footer += h_f
+                            space *= c
+
+                        char = "]" + space + "│"
+                        break
+
+                chapter_baru = input(f'''{header+headerEND}
+┏━┥  Chapter baru [{len_dataChapter+char}
+{footer+footerEND}
 ┗━━━━━➤  ''').strip()
                 if chapter_baru:
                     data["chapter"] = chapter_baru
 
-                ed_baru = input(f'''  ╭───────────────────────────────────────────╮
-┏━┥  Edition baru [{data.get('edition','')}]  │
-┃ ╰───────────────────────────────────────────╯
+                len_dataEdition = data.get('edition', '')
+                header = '  ╭───────────────────'
+                headerEND = '╮'
+                footer = '┃ ╰───────────────────'
+                footerEND = '╯'
+                space = ' '
+                c = 2
+                for i in range(0, 50):
+                    if len(len_dataEdition) == i:
+                        if len(len_dataEdition) == 0:
+                            # jika kosong tampilannyaa normal
+                            char = "]  │"
+                            break
+
+                        elif len(len_dataEdition) >= 1:
+                            h_f = '─'
+                            h_f += h_f * (len(len_dataEdition) - c)
+                            header += h_f
+                            footer += h_f
+                            space *= c
+
+                        char = "]" + space + "│"
+                        break
+
+
+                ed_baru = input(f'''{header+headerEND}
+┏━┥  Edition baru [{len_dataEdition+char}
+{footer+footerEND}
 ┗━━━━━➤  ''').strip()
                 if ed_baru:
                     data["edition"] = ed_baru
 
-                city_baru = input(f'''  ╭─────────────────────────────────────╮
-┏━┥  City baru [{data.get('city','')}]  │
-┃ ╰─────────────────────────────────────╯
+                len_dataCity = data.get('city', '')
+                header = '  ╭────────────────'
+                headerEND = '╮'
+                footer = '┃ ╰────────────────'
+                footerEND = '╯'
+                space = ' '
+                c = 2
+                for i in range(0, 50):
+                    if len(len_dataCity) == i:
+                        if len(len_dataCity) == 0:
+                            # jika kosong tampilannyaa normal
+                            char = "]  │"
+                            break
+
+                        elif len(len_dataCity) >= 1:
+                            h_f = '─'
+                            h_f += h_f * (len(len_dataCity) - c)
+                            header += h_f
+                            footer += h_f
+                            space *= c
+
+                        char = "]" + space + "│"
+                        break
+
+                city_baru = input(f'''{header+headerEND}
+┏━┥  City baru [{len_dataCity+char}
+{footer+footerEND}
 ┗━━━━━➤  ''').strip()
                 if city_baru:
                     data["city"] = city_baru
 
-                pub_baru = input(f'''  ╭───────────────────────────────────────────────╮
-┏━┥  Publisher baru [{data.get('publisher','')}]  │
-┃ ╰───────────────────────────────────────────────╯
+                len_dataPublisher = data.get('publisher', '')
+                header = '  ╭─────────────────────'
+                headerEND = '╮'
+                footer = '┃ ╰─────────────────────'
+                footerEND = '╯'
+                space = ' '
+                c = 2
+                for i in range(0, 50):
+                    if len(len_dataPublisher) == i:
+                        if len(len_dataPublisher) == 0:
+                            # jika kosong tampilannyaa normal
+                            char = "]  │"
+                            break
+
+                        elif len(len_dataPublisher) >= 1:
+                            h_f = '─'
+                            h_f += h_f * (len(len_dataPublisher) - c)
+                            header += h_f
+                            footer += h_f
+                            space *= c
+
+                        char = "]" + space + "│"
+                        break
+
+                pub_baru = input(f'''{header+headerEND}
+┏━┥  Publisher baru [{len_dataPublisher+char}
+{footer+footerEND}
 ┗━━━━━➤  ''').strip()
                 if pub_baru:
                     data["publisher"] = pub_baru
