@@ -26,9 +26,9 @@ while True:
 ██ ⮞ [C] Main                     █ Mulai Program                     ██
 {"█"*(len(headerStp)+1)}''') #len(headerstp) yaitu mengecek panjang element di tambah 1 agar bisa sejajar dengan len yang atas(headerStp)
     # konfirmasi
-    setupQuest = input('''  ╭───────────────────────────────────────────────────────╮
-┏━┥  pilih harap pilih A terlebih dahulu, dan seterusnya  │
-┃ ╰───────────────────────────────────────────────────────╯
+    setupQuest = input('''  ╭─────────────────────────────────────────────────╮
+┏━┥  harap pilih A terlebih dahulu, dan seterusnya  │
+┃ ╰─────────────────────────────────────────────────╯
 ┗━━━━━➤  ''')
     # mengecek versi python
     if setupQuest == 'a' or setupQuest == 'A':

@@ -812,7 +812,7 @@ def lihat_daftar(): # fungsi melihat list daftar pustaka
     for item in daftar_pustaka:
         style = item["style"] #mengambil nilai style dari item
         if style not in kelompok: # klo style gada di dalem kelompok maka 
-            kelompok[style] = [] #Buat baru baru dalam dictionary kelompok sesuai style.
+            kelompok[style] = [] #Buat nilai style baru yang ada dalam dictionary kelompok sesuai nilai style.
         kelompok[style].append(item) #setelah di buat kategori baru dalem kelompok maka tambahin item ke dalem listnya 
     #hiasan awal
     jumbotron2 = r'''

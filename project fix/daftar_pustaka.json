@@ -638,5 +638,26 @@
         "chapter": "",
         "link": "http",
         "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "APA",
+        "judul": "EVALUASI USER EXPERIENCE PADA GAME GTA V ROLEPLAY SERVER INDOPRIDE MENGGUNAKAN METODE ENHANCED COGNITIVE WALKTHROUGH",
+        "authors": [
+            "Khofifah Humaeroh Az Zahra",
+            "Firman Noor Hasan"
+        ],
+        "tahun": 2024,
+        "jurnal": "Jurnal Ilmiah Pendidikan Informatika (JIPI)",
+        "volume": "9",
+        "issue": "4",
+        "halaman": "",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "https://doi.org/10.29100/jipi.v9i4.5659",
+        "book": ""
     }
 ]
