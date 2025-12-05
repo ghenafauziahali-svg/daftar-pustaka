@@ -343,6 +343,10 @@ def ubah_data():
 ┏━┥  Pilih Data yang ingin diubah  │
 ┃ ╰────────────────────────────────╯
 ┗━━━━━➤  ''' + Style.RESET_ALL)) - 1
+            if index == -1: # user menginputkan 0, maka index sekarang -1 karena di "...━━━━━➤  ''')) - 1" nominal index di kurang 1, menjadi -1
+                layar()
+                from main import tampilan_utama
+                tampilan_utama()
             if 0 <= index < len(daftar_pustaka):
                 break
             else:
@@ -770,8 +774,7 @@ def hapus_data():
 ┏━┥  Pilih nomor data yang ingin dihapus  │
 ┃ ╰───────────────────────────────────────╯
 ┗━━━━━➤  ''')) - 1
-
-            print(index)
+            print(Back.RED + Fore.LIGHTWHITE_EX + Style.BRIGHT + f'Kamu ingin menghapus Judul [{daftar_pustaka[index]["judul"]}] ❓')
             if index == -1: # user menginputkan 0, maka index sekarang -1 karena di "...━━━━━➤  ''')) - 1" nominal index di kurang 1, menjadi -1
                 layar()
                 from main import tampilan_utama
@@ -801,11 +804,15 @@ def hapus_data():
         else:
             print("masukan tidak valid, ketik y atau n")
 
+def urut(data):
+    return data['authors'][0].lower()
 
 def lihat_daftar(): # fungsi melihat list daftar pustaka
     if not daftar_pustaka: #klo isi list daftar pustaka belom ada isinya maka jalanin statemtn ini
         print(Fore.RED + "\nBelum ada data daftar pustaka.\n")
         return
+    
+    daftar_pustaka.sort(key=urut)
 
     kelompok = {} #buat dictionary sementara
     # mengkelompokkan data sesuai style
@@ -824,6 +831,7 @@ def lihat_daftar(): # fungsi melihat list daftar pustaka
     print(Fore.GREEN + f'\t\t{jumbotron2}') #cetak jumbotronnya
     for style, daftar in kelompok.items(): #items adalah metode dari dictionary, perulangan ini memecah setiap pasangan yaitu style adalah kuncinya, daftar sebagai nilainya
         print("─"*50 + f" {style.upper()} " + "─"*50) #gaya daftar pustaka(APA,dll)
+        daftar.sort(key=urut)
         for i, data in enumerate(daftar, start=1): # i sebagai nomor urut yang di mulai dari 1, data yaitu urutan data sesuai nomor urut
             if style == "IEEE":
                 print(f"[{i}]. {format_styles(data)}\n")#menampilkan nomor urut. memanggil fungsi. jika format  pakai gaya IEEE maka penomoran dikasih kurung kotak []

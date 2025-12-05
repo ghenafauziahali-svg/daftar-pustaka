@@ -1,22 +1,24 @@
 [
     {
         "referensi": "Journal/Article",
-        "style": "IEEE",
-        "judul": "Bisa ya seAsing itu",
+        "style": "APA",
+        "judul": "s",
         "authors": [
-            "Palupi, Isan"
+            "A",
+            "S",
+            "Kw"
         ],
-        "tahun": 2025,
-        "jurnal": "",
+        "tahun": 1111,
+        "jurnal": "acda",
         "volume": "1",
         "issue": "1",
-        "halaman": "",
+        "halaman": "11-11",
         "edition": "",
         "editors": [],
         "city": "",
         "publisher": "",
         "chapter": "",
-        "link": "****a.netlify.app",
+        "link": "http",
         "book": ""
     },
     {
@@ -272,32 +274,6 @@
         "book": ""
     },
     {
-        "referensi": "Book",
-        "style": "Harvard",
-        "judul": "judul buku harvard",
-        "authors": [
-            "Ali, Umar",
-            "Ali, Ghena Fauziah Ali",
-            "Ali, Amelia Saidah"
-        ],
-        "tahun": 2022,
-        "jurnal": "",
-        "volume": "2",
-        "issue": "",
-        "halaman": "12",
-        "edition": 1,
-        "editors": [
-            "Ali, Ghena Fauziah",
-            "Prasetyo, Raiz Erda",
-            "Umar, Ali"
-        ],
-        "city": "jakarta",
-        "publisher": "detik",
-        "chapter": "",
-        "link": "www.wwww.www",
-        "book": ""
-    },
-    {
         "referensi": "Book Section",
         "style": "Harvard",
         "judul": "judul bab buku harvard",
@@ -407,25 +383,156 @@
         "book": "buku vancouver style"
     },
     {
-        "referensi": "Book",
-        "style": "IEEE",
-        "judul": "df",
+        "referensi": "Book Section",
+        "style": "Vancouver",
+        "judul": "hari ini bulan mei",
         "authors": [
-            "Ss",
-            "Asasa,Aks"
+            "Ali, Ghena Fauziah",
+            "Cahya, Irene",
+            "Prasetyo, Raiz Erda"
+        ],
+        "tahun": 2022,
+        "jurnal": "",
+        "volume": "3",
+        "issue": "",
+        "halaman": "12-32",
+        "edition": "1234",
+        "editors": [
+            "Ali, Amelia Saidah",
+            "Prasetyo, Raiz Erda",
+            "Raiz"
+        ],
+        "city": "bukit tinggi",
+        "publisher": "detik",
+        "chapter": "2",
+        "link": "www.detik.com",
+        "book": "buku indonesia"
+    },
+    {
+        "referensi": "Book",
+        "style": "Harvard",
+        "judul": "judul buku harvard",
+        "authors": [
+            "Ali, Umar",
+            "Ali, Ghena Fauziah Ali",
+            "Ali, Amelia Saidah"
+        ],
+        "tahun": 2022,
+        "jurnal": "",
+        "volume": "2",
+        "issue": "",
+        "halaman": "12",
+        "edition": 1,
+        "editors": [
+            "Ali, Ghena Fauziah",
+            "Prasetyo, Raiz Erda",
+            "Umar, Ali"
+        ],
+        "city": "jakarta",
+        "publisher": "detik",
+        "chapter": "",
+        "link": "www.wwww.www",
+        "book": ""
+    },
+    {
+        "referensi": "Book",
+        "style": "Vancouver",
+        "judul": "judul",
+        "authors": [
+            "As"
+        ],
+        "tahun": 3,
+        "jurnal": "",
+        "volume": "3",
+        "issue": "",
+        "halaman": "2",
+        "edition": "w",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": ""
+    },
+    {
+        "referensi": "Book Section",
+        "style": "Vancouver",
+        "judul": "",
+        "authors": [
+            "As"
         ],
         "tahun": 2,
         "jurnal": "",
         "volume": "2",
         "issue": "",
-        "halaman": "1",
-        "edition": "1w",
+        "halaman": "3",
+        "edition": "2",
         "editors": [],
-        "city": "2",
-        "publisher": "w",
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": "buku indonesia"
+    },
+    {
+        "referensi": "Book",
+        "style": "Harvard",
+        "judul": "judul",
+        "authors": [
+            "Asa"
+        ],
+        "tahun": 111,
+        "jurnal": "",
+        "volume": "2",
+        "issue": "",
+        "halaman": "1",
+        "edition": "2",
+        "editors": [],
+        "city": "",
+        "publisher": "",
         "chapter": "",
         "link": "",
         "book": ""
+    },
+    {
+        "referensi": "Book Section",
+        "style": "MLA",
+        "judul": "",
+        "authors": [
+            "D"
+        ],
+        "tahun": 23,
+        "jurnal": "",
+        "volume": "",
+        "issue": "",
+        "halaman": "",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": ""
+    },
+    {
+        "referensi": "Book Section",
+        "style": "Harvard",
+        "judul": "ju",
+        "authors": [
+            "D"
+        ],
+        "tahun": 3,
+        "jurnal": "",
+        "volume": "3",
+        "issue": "",
+        "halaman": "3",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": "f"
     },
     {
         "referensi": "Book Section",
@@ -469,177 +576,6 @@
         "book": ""
     },
     {
-        "referensi": "Book Section",
-        "style": "MLA",
-        "judul": "j",
-        "authors": [
-            "W",
-            "S",
-            "W",
-            "A"
-        ],
-        "tahun": 2,
-        "jurnal": "",
-        "volume": "1",
-        "issue": "",
-        "halaman": "",
-        "edition": "",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "",
-        "book": "1"
-    },
-    {
-        "referensi": "Book Section",
-        "style": "MLA",
-        "judul": "",
-        "authors": [
-            "D"
-        ],
-        "tahun": 23,
-        "jurnal": "",
-        "volume": "",
-        "issue": "",
-        "halaman": "",
-        "edition": "",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "",
-        "book": ""
-    },
-    {
-        "referensi": "Book",
-        "style": "Harvard",
-        "judul": "judul",
-        "authors": [
-            "Asa"
-        ],
-        "tahun": 111,
-        "jurnal": "",
-        "volume": "2",
-        "issue": "",
-        "halaman": "1",
-        "edition": "2",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "",
-        "book": ""
-    },
-    {
-        "referensi": "Book Section",
-        "style": "Harvard",
-        "judul": "ju",
-        "authors": [
-            "D"
-        ],
-        "tahun": 3,
-        "jurnal": "",
-        "volume": "3",
-        "issue": "",
-        "halaman": "3",
-        "edition": "",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "",
-        "book": "f"
-    },
-    {
-        "referensi": "Book",
-        "style": "Vancouver",
-        "judul": "judul",
-        "authors": [
-            "As"
-        ],
-        "tahun": 3,
-        "jurnal": "",
-        "volume": "3",
-        "issue": "",
-        "halaman": "2",
-        "edition": "w",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "",
-        "book": ""
-    },
-    {
-        "referensi": "Book Section",
-        "style": "Vancouver",
-        "judul": "",
-        "authors": [
-            "As"
-        ],
-        "tahun": 2,
-        "jurnal": "",
-        "volume": "2",
-        "issue": "",
-        "halaman": "3",
-        "edition": "2",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "",
-        "book": "buku indonesia"
-    },
-    {
-        "referensi": "Book Section",
-        "style": "Vancouver",
-        "judul": "hari ini bulan mei",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Cahya, Irene",
-            "Prasetyo, Raiz Erda"
-        ],
-        "tahun": 2022,
-        "jurnal": "",
-        "volume": "3",
-        "issue": "",
-        "halaman": "12-32",
-        "edition": "1234",
-        "editors": [
-            "Ali, Amelia Saidah",
-            "Prasetyo, Raiz Erda",
-            "Raiz"
-        ],
-        "city": "bukit tinggi",
-        "publisher": "detik",
-        "chapter": "2",
-        "link": "www.detik.com",
-        "book": "buku indonesia"
-    },
-    {
-        "referensi": "Journal/Article",
-        "style": "APA",
-        "judul": "s",
-        "authors": [
-            "A",
-            "S",
-            "Kw"
-        ],
-        "tahun": 1111,
-        "jurnal": "acda",
-        "volume": "1",
-        "issue": "1",
-        "halaman": "11-11",
-        "edition": "",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "http",
-        "book": ""
-    },
-    {
         "referensi": "Journal/Article",
         "style": "APA",
         "judul": "EVALUASI USER EXPERIENCE PADA GAME GTA V ROLEPLAY SERVER INDOPRIDE MENGGUNAKAN METODE ENHANCED COGNITIVE WALKTHROUGH",
@@ -659,5 +595,69 @@
         "chapter": "",
         "link": "https://doi.org/10.29100/jipi.v9i4.5659",
         "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "IEEE",
+        "judul": "Bisa ya seAsing itu",
+        "authors": [
+            "Palupi, Isan"
+        ],
+        "tahun": 2025,
+        "jurnal": "",
+        "volume": "1",
+        "issue": "1",
+        "halaman": "",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "****a.netlify.app",
+        "book": ""
+    },
+    {
+        "referensi": "Book",
+        "style": "IEEE",
+        "judul": "df",
+        "authors": [
+            "Ss",
+            "Asasa,Aks"
+        ],
+        "tahun": 2,
+        "jurnal": "",
+        "volume": "2",
+        "issue": "",
+        "halaman": "1",
+        "edition": "1w",
+        "editors": [],
+        "city": "2",
+        "publisher": "w",
+        "chapter": "",
+        "link": "",
+        "book": ""
+    },
+    {
+        "referensi": "Book Section",
+        "style": "MLA",
+        "judul": "Be FiveVision",
+        "authors": [
+            "W",
+            "S",
+            "W",
+            "A"
+        ],
+        "tahun": 2,
+        "jurnal": "",
+        "volume": "1",
+        "issue": "",
+        "halaman": "",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": "1"
     }
 ]
