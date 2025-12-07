@@ -805,14 +805,12 @@ def hapus_data():
             print("masukan tidak valid, ketik y atau n")
 
 def urut(data):
-    return data['authors'][0].lower()
+    return data['authors'][0].split(",")[0].split()[-1].lower()  # mengambil nama belakang dari penulis pertama, lalu mengubahnya jadi huruf kecil, untuk dipakai sebagai dasar pengurutan
 
 def lihat_daftar(): # fungsi melihat list daftar pustaka
     if not daftar_pustaka: #klo isi list daftar pustaka belom ada isinya maka jalanin statemtn ini
         print(Fore.RED + "\nBelum ada data daftar pustaka.\n")
         return
-    
-    daftar_pustaka.sort(key=urut)
 
     kelompok = {} #buat dictionary sementara
     # mengkelompokkan data sesuai style
@@ -831,10 +829,13 @@ def lihat_daftar(): # fungsi melihat list daftar pustaka
     print(Fore.GREEN + f'\t\t{jumbotron2}') #cetak jumbotronnya
     for style, daftar in kelompok.items(): #items adalah metode dari dictionary, perulangan ini memecah setiap pasangan yaitu style adalah kuncinya, daftar sebagai nilainya
         print("─"*50 + f" {style.upper()} " + "─"*50) #gaya daftar pustaka(APA,dll)
-        daftar.sort(key=urut)
+        if style == "APA" and style == "MLA" and style == "Harvard":
+            daftar.sort(key=urut)
         for i, data in enumerate(daftar, start=1): # i sebagai nomor urut yang di mulai dari 1, data yaitu urutan data sesuai nomor urut
             if style == "IEEE":
                 print(f"[{i}]. {format_styles(data)}\n")#menampilkan nomor urut. memanggil fungsi. jika format  pakai gaya IEEE maka penomoran dikasih kurung kotak []
+            elif style == "Vancouver":
+                print(f"{i}. {format_styles(data)}\n")#menampilkan nomor urut. memanggil fungsi. jika format pakai gaya Vancouver maka menggunakan penomoran biasa tanpa kurung
             else:
-                print(f"{i}. {format_styles(data)}\n")  #jika tidak, penomoran memakai .
+                print(f"{format_styles(data)}\n")  #jika tidak, format penulisan tidak pakai nomor urut
 

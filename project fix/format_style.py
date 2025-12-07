@@ -10,8 +10,7 @@ from tambahan import (
     format_MLA,
     format_HARVARD,
     editor_HARVARD,
-    editor_APAbook,
-    editor_booksectionAPA
+    editor_APA
 )
 
 def format_styles(data):
@@ -73,7 +72,7 @@ def format_styles(data):
 
     elif referensi == "Book":
         if tipe_styles == "APA":
-            return f"{format_APA(data['authors'])} {format_tahunkurung} \x1B[3m{data['judul']}\x1B[0m ({editor_APAbook(data['editors'])}{edition_format} {volume_format}). {data['publisher']}. {data['link']}"
+            return f"{format_APA(data['authors'])} {format_tahunkurung} \x1B[3m{data['judul']}\x1B[0m ({editor_APA(data['editors'])}{edition_format} {volume_format}). {data['publisher']}. {data['link']}"
         elif tipe_styles == "IEEE":
             return f"{format_IEEE(data['authors'])} \"{data['judul']},\" {editor_IEEE(data['editors'])}{edition_format}{volume_format}. {city_format} {data['publisher']}, {data['tahun']}. {data['link']}"
         elif tipe_styles == "MLA":
@@ -85,7 +84,7 @@ def format_styles(data):
 
     else:
         if tipe_styles == "APA":
-            return f"{format_APA(data['authors'])} {format_tahunkurung} {data['judul']}. In {editor_booksectionAPA(data['editors'])} \x1B[3m{data['book']}\x1B[0m ({edition_format} {volume_format} {hal_formatPP}). {data['publisher']}. {data['link']}"
+            return f"{format_APA(data['authors'])} {format_tahunkurung} {data['judul']}. In {editor_APA(data['editors'])} \x1B[3m{data['book']}\x1B[0m ({edition_format} {volume_format} {hal_formatPP}). {data['publisher']}. {data['link']}"
         elif tipe_styles == "IEEE":
             return f"{format_IEEE(data['authors'])} \"{data['judul']},\" in \x1B[3m{data['book']}\x1B[0m, {edition_format}{volume_format}{editor_IEEE(data['editors'])} {city_format} {data['publisher']}, {data['tahun']}, {chap_format} {hal_formatPP}. {data['link']}"
         elif tipe_styles == "MLA":
