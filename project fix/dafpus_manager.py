@@ -451,13 +451,7 @@ def ubah_data():
 ┗━━━━━➤  ''').strip()
                 if jurnal_baru:
                     data["jurnal"] = jurnal_baru
-                issue_baru = input('''  ╭──────────────╮
-┏━┥  Issue Baru  │
-┃ ╰──────────────╯
-┗━━━━━➤  ''').strip()
-                if issue_baru:
-                    data['issue'] = issue_baru
-
+                    
                 issue_baru = input('''  ╭──────────────╮
 ┏━┥  Issue Baru  │
 ┃ ╰──────────────╯
