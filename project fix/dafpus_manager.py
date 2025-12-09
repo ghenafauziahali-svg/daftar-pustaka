@@ -682,6 +682,7 @@ def ubah_data():
 ┗━━━━━➤  ''').strip()
                 if pub_baru:
                     data["publisher"] = pub_baru
+
                 while True:
                     ubah_editor = input('''  ╭──────────────────────────────────────────────╮
 ┏━┥  Apakah ingin mengubah daftar editor? (y/n)  │
@@ -823,7 +824,7 @@ def lihat_daftar(): # fungsi melihat list daftar pustaka
     print(Fore.GREEN + f'\t\t{jumbotron2}') #cetak jumbotronnya
     for style, daftar in kelompok.items(): #items adalah metode dari dictionary, perulangan ini memecah setiap pasangan yaitu style adalah kuncinya, daftar sebagai nilainya
         print("─"*50 + f" {style.upper()} " + "─"*50) #gaya daftar pustaka(APA,dll)
-        if style == "APA" and style == "MLA" and style == "Harvard":
+        if style in ['APA', 'MLA', 'Harvard']:
             daftar.sort(key=urut)
         for i, data in enumerate(daftar, start=1): # i sebagai nomor urut yang di mulai dari 1, data yaitu urutan data sesuai nomor urut
             if style == "IEEE":

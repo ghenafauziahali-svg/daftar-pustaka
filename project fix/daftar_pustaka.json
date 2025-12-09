@@ -317,5 +317,65 @@
         "chapter": "",
         "link": "https://doi.org/10.29100/jipi.v9i4.5659",
         "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "Vancouver",
+        "judul": "a",
+        "authors": [
+            "A"
+        ],
+        "tahun": 3,
+        "jurnal": "",
+        "volume": "",
+        "issue": "",
+        "halaman": "",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "IEEE",
+        "judul": "d",
+        "authors": [
+            "A"
+        ],
+        "tahun": 3,
+        "jurnal": "",
+        "volume": "",
+        "issue": "",
+        "halaman": "",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "APA",
+        "judul": "a",
+        "authors": [
+            "A"
+        ],
+        "tahun": 3,
+        "jurnal": "",
+        "volume": "",
+        "issue": "",
+        "halaman": "",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": ""
     }
 ]
