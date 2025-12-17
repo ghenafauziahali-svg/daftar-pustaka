@@ -204,16 +204,7 @@ def format_APA(authors): #format gaya APA
     elif len(format_akhir_inisial) > 20:
         return ", ".join(format_akhir_inisial[:19]) + f", ..." + format_akhir_inisial[-1]
 
-def editor_APAbook(editors):
-    formatted = format_APA(editors)
-    if not editors:
-        return "" 
-    if len(editors) == 1:
-        return f"{formatted}, (Ed.);" # klo editornya cuma 1 pake format (Ed.);
-    else:
-        return f"{formatted}, (Eds.);" # klo lebih? pake yang Eds
-
-def editor_booksectionAPA(editors):
+def editor_APA(editors):
     format_awal_inisial = []
     
     for name in editors:
@@ -237,6 +228,6 @@ def editor_booksectionAPA(editors):
     if len(format_awal_inisial) == 1:
         return f"{format_awal_inisial[0]}, (Ed),"
     elif 2 <= len(format_awal_inisial) <= 20:
-        return ", ".join(format_awal_inisial[:-1]) + f", & {format_awal_inisial[-1]}, (Eds.),"
+        return ", ".join(format_awal_inisial[:-1]) + f", & {format_awal_inisial[-1]}, (Eds.)," # klo editornya cuma 1 pake format (Ed.);
     elif len(format_awal_inisial) > 20:
-        return ", ".join(format_awal_inisial[:19]) + f", ...{format_awal_inisial[-1]}, (Eds.),"
+        return ", ".join(format_awal_inisial[:19]) + f", ...{format_awal_inisial[-1]}, (Eds.)," # klo lebih? pake yang Eds

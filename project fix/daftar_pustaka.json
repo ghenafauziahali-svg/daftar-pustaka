@@ -1,306 +1,23 @@
 [
     {
         "referensi": "Journal/Article",
-        "style": "APA",
-        "judul": "s",
+        "style": "Vancouver",
+        "judul": "Krisis Moral dan Etika di Kalangan Generasi Muda Indonesia dalam Perspektif Profesi Guru",
         "authors": [
-            "A",
-            "S",
-            "Kw"
+            "Aisyah, Nasya'A Nadyah"
         ],
-        "tahun": 1111,
-        "jurnal": "acda",
-        "volume": "1",
+        "tahun": 2025,
+        "jurnal": "Jurnal Pendidikan dan Pembelajaran Indonesia (JPPI)",
+        "volume": "5",
         "issue": "1",
-        "halaman": "11-11",
+        "halaman": "329-337",
         "edition": "",
         "editors": [],
         "city": "",
         "publisher": "",
         "chapter": "",
-        "link": "http",
+        "link": "",
         "book": ""
-    },
-    {
-        "referensi": "Journal/Article",
-        "style": "APA",
-        "judul": "judul jurnal artikelnya",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Ali, Amelia Saidah",
-            "Prasetyo, Raiz Erda",
-            "Arsya"
-        ],
-        "tahun": 2022,
-        "jurnal": "jurnal ",
-        "volume": "1",
-        "issue": "2",
-        "halaman": "12-22",
-        "edition": "",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "www.ddfd.com",
-        "book": ""
-    },
-    {
-        "referensi": "Book",
-        "style": "APA",
-        "judul": "judul buku",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Rinekso, Irene Cahya",
-            "Prassetyo, Raiz Erda"
-        ],
-        "tahun": 2022,
-        "jurnal": "",
-        "volume": "1",
-        "issue": "",
-        "halaman": "12",
-        "edition": 2,
-        "editors": [
-            "Naima, Rajwa",
-            "Dewi, Rachmalina Latifa",
-            "Beomgyu, Choi",
-            "Taehyun, Kang"
-        ],
-        "city": "jakarta",
-        "publisher": "Detik",
-        "chapter": "",
-        "link": "www.detik.com",
-        "book": ""
-    },
-    {
-        "referensi": "Book Section",
-        "style": "APA",
-        "judul": "judul bab bukunya",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Ali, Amelia Saidah",
-            "Arsya",
-            "Umar, Ali"
-        ],
-        "tahun": 2022,
-        "jurnal": "",
-        "volume": "2",
-        "issue": "",
-        "halaman": "12-22",
-        "edition": 2,
-        "editors": [
-            "Beomgyu, Choi",
-            "Kamal, Hueningkai Kai",
-            "Taehyun, Kang",
-            "Prasetyo, Raiz Erda"
-        ],
-        "city": "jakarta",
-        "publisher": "detik",
-        "chapter": 1,
-        "link": "www. eee",
-        "book": "judul bukunya"
-    },
-    {
-        "referensi": "Journal/Article",
-        "style": "IEEE",
-        "judul": "judurl jurnal ieee",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Ali, Amelia Saidah",
-            "Andrean, Maulana Arsya",
-            "Prasestyo, Rais Erda",
-            "Umar, Ali",
-            "Amelia, Rosy",
-            "Wulandari, Dyah"
-        ],
-        "tahun": 2022,
-        "jurnal": "jurnal ieee",
-        "volume": "1",
-        "issue": "2",
-        "halaman": "12-22",
-        "edition": "",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "https.ieee.org",
-        "book": ""
-    },
-    {
-        "referensi": "Book",
-        "style": "IEEE",
-        "judul": "judul buku ieee",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Prasetyo, Rais Erda",
-            "Rinekso, Irene Cahya",
-            "Umar, Ali"
-        ],
-        "tahun": 2022,
-        "jurnal": "",
-        "volume": "2",
-        "issue": "",
-        "halaman": "12-12",
-        "edition": 2,
-        "editors": [
-            "Beomgyu, Choi",
-            "Soobin, Choi",
-            "Kamal, Hueningkai Kai",
-            "Purnama, Khamalia Icha"
-        ],
-        "city": "padang",
-        "publisher": "detik",
-        "chapter": "",
-        "link": "detik.com",
-        "book": ""
-    },
-    {
-        "referensi": "Book Section",
-        "style": "IEEE",
-        "judul": "judul bab buku ieee",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Prasetyo, Raiz Erda",
-            "Umar, Ali"
-        ],
-        "tahun": 2022,
-        "jurnal": "",
-        "volume": "2",
-        "issue": "",
-        "halaman": "12-22",
-        "edition": 2,
-        "editors": [
-            "Ali, Amelia Saidah",
-            "Umar, Ali"
-        ],
-        "city": "jakarta",
-        "publisher": "detik",
-        "chapter": 2,
-        "link": "www.detik.com",
-        "book": "buku ieee style"
-    },
-    {
-        "referensi": "Journal/Article",
-        "style": "MLA",
-        "judul": "judul jurnal mla",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Prasetyo, Raiz Erda",
-            "Arsya"
-        ],
-        "tahun": 2016,
-        "jurnal": "jurnal mla",
-        "volume": "2",
-        "issue": "2",
-        "halaman": "12",
-        "edition": "",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "www.mla.org",
-        "book": ""
-    },
-    {
-        "referensi": "Book",
-        "style": "MLA",
-        "judul": "judul buku mla",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Ali, Amelia Saidah",
-            "Prasetyo, Raiz Erda",
-            "Arsya"
-        ],
-        "tahun": 2022,
-        "jurnal": "",
-        "volume": "2",
-        "issue": "",
-        "halaman": "12-22",
-        "edition": 2,
-        "editors": [
-            "Umar, Ali",
-            "Dewi, Rachmalina Latifa"
-        ],
-        "city": "jakarta",
-        "publisher": "detik",
-        "chapter": "",
-        "link": "https://detik.com",
-        "book": ""
-    },
-    {
-        "referensi": "Book Section",
-        "style": "MLA",
-        "judul": "judul bab buku mla",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Ali, Amelia Saidah"
-        ],
-        "tahun": 2021,
-        "jurnal": "",
-        "volume": "2",
-        "issue": "",
-        "halaman": "12-22",
-        "edition": 3,
-        "editors": [
-            "Ali, Ghena Fauziah",
-            "Prasetyo, Rais Erda"
-        ],
-        "city": "jkarta",
-        "publisher": "detik",
-        "chapter": 2,
-        "link": "www.mla.com",
-        "book": "buku mla style "
-    },
-    {
-        "referensi": "Journal/Article",
-        "style": "Harvard",
-        "judul": "judul harvard style",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Ali, Amelia Saidah",
-            "Prasetyo, Raiz Erda",
-            "Arsya"
-        ],
-        "tahun": 2022,
-        "jurnal": "jurnal harvard style",
-        "volume": "1",
-        "issue": "2",
-        "halaman": "12",
-        "edition": "",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "www.harvard",
-        "book": ""
-    },
-    {
-        "referensi": "Book Section",
-        "style": "Harvard",
-        "judul": "judul bab buku harvard",
-        "authors": [
-            "Ali, Ghena Fauziah",
-            "Ali, Amelia Saidah",
-            "Prasetyo, Raiz Erda",
-            "Arsya"
-        ],
-        "tahun": 2022,
-        "jurnal": "",
-        "volume": "1",
-        "issue": "",
-        "halaman": "12-22",
-        "edition": 4,
-        "editors": [
-            "Ali, Ghena Fauziah",
-            "Umar, Ali",
-            "Kamal, Huening Kai",
-            "Beomgyu, Choi",
-            "Umar, Ali"
-        ],
-        "city": "jakarta",
-        "publisher": "detik",
-        "chapter": 2,
-        "link": "www.wwww",
-        "book": "buku harvard style"
     },
     {
         "referensi": "Journal/Article",
@@ -435,76 +152,81 @@
         "book": ""
     },
     {
-        "referensi": "Book",
-        "style": "Vancouver",
-        "judul": "judul",
-        "authors": [
-            "As"
-        ],
-        "tahun": 3,
-        "jurnal": "",
-        "volume": "3",
-        "issue": "",
-        "halaman": "2",
-        "edition": "w",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "",
-        "book": ""
-    },
-    {
-        "referensi": "Book Section",
-        "style": "Vancouver",
-        "judul": "",
-        "authors": [
-            "As"
-        ],
-        "tahun": 2,
-        "jurnal": "",
-        "volume": "2",
-        "issue": "",
-        "halaman": "3",
-        "edition": "2",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "",
-        "book": "buku indonesia"
-    },
-    {
-        "referensi": "Book",
-        "style": "Harvard",
-        "judul": "judul",
-        "authors": [
-            "Asa"
-        ],
-        "tahun": 111,
-        "jurnal": "",
-        "volume": "2",
-        "issue": "",
-        "halaman": "1",
-        "edition": "2",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "",
-        "book": ""
-    },
-    {
-        "referensi": "Book Section",
+        "referensi": "Journal/Article",
         "style": "MLA",
-        "judul": "",
+        "judul": "PENGENALAN INTERNET DAN JARINGAN DASAR DI SD 90 REJANG LEBONG",
         "authors": [
-            "D"
+            "Azhura, Muthia",
+            "Yahya, Ilham",
+            "Ayuni, Rossa",
+            "Suryani, Ade Irma"
         ],
-        "tahun": 23,
+        "tahun": 2024,
+        "jurnal": "Jurnal Al Maun Pengabdian Kepada Masyarakat",
+        "volume": "4",
+        "issue": "",
+        "halaman": "296-304",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "IEEE",
+        "judul": "Bisa ya seAsing itu",
+        "authors": [
+            "Palupi, Isan"
+        ],
+        "tahun": 2025,
         "jurnal": "",
+        "volume": "1",
+        "issue": "1",
+        "halaman": "",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "****a.netlify.app",
+        "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "APA",
+        "judul": "About APA Style",
+        "authors": [
+            "Pangeran, Andi"
+        ],
+        "tahun": 2024,
+        "jurnal": "Journal of Science and Education (JSE)",
         "volume": "",
         "issue": "",
+        "halaman": "",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "https://www.researchgate.net/publication/387327566_Format_APA_Style",
+        "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "IEEE",
+        "judul": "FAKTOR-FAKTOR YANG MEMPENGARUHI ETIKA SISTEM  INFORMASI: MORAL, ISU SOSIAL DAN ETIKA MASYARAKAT  (LITERATURE REVIEW SIM) ",
+        "authors": [
+            "Prasetyaningrum, Galuh",
+            "Nurmayanti, Finda",
+            "Azahra, Fallya"
+        ],
+        "tahun": 2022,
+        "jurnal": "Jurnal Manajemen Pendidikan dan Ilmu Sosial",
+        "volume": "3",
+        "issue": "2",
         "halaman": "",
         "edition": "",
         "editors": [],
@@ -515,64 +237,64 @@
         "book": ""
     },
     {
-        "referensi": "Book Section",
-        "style": "Harvard",
-        "judul": "ju",
+        "referensi": "Journal/Article",
+        "style": "MLA",
+        "judul": "Aktualisasi Pancasila Kepada Mahasiswa",
         "authors": [
-            "D"
+            "Rosid, Irvan Nur",
+            "Najicha, Fatma Ulfatun"
         ],
-        "tahun": 3,
-        "jurnal": "",
-        "volume": "3",
+        "tahun": 2023,
+        "jurnal": "Journal Ummat",
+        "volume": "",
         "issue": "",
-        "halaman": "3",
+        "halaman": "1-9",
         "edition": "",
         "editors": [],
         "city": "",
         "publisher": "",
         "chapter": "",
         "link": "",
-        "book": "f"
+        "book": ""
     },
     {
-        "referensi": "Book Section",
-        "style": "IEEE",
-        "judul": "juudl",
+        "referensi": "Journal/Article",
+        "style": "Vancouver",
+        "judul": "Peran Pendidikan Pancasila Dalam Pembentukan Etika Profesi Di Lingkungan Akademik ",
         "authors": [
-            "Ghena"
+            "Simamora, Swanno"
         ],
-        "tahun": 2121,
-        "jurnal": "",
-        "volume": "1",
-        "issue": "",
-        "halaman": "12",
-        "edition": "2",
+        "tahun": 2021,
+        "jurnal": "JUDGE: Jurnal Hukum",
+        "volume": "3",
+        "issue": "1",
+        "halaman": "34-40",
+        "edition": "",
         "editors": [],
-        "city": "c",
+        "city": "",
         "publisher": "",
-        "chapter": 1,
+        "chapter": "",
         "link": "",
-        "book": "buku"
+        "book": ""
     },
     {
         "referensi": "Book",
-        "style": "MLA",
-        "judul": "jdul",
+        "style": "Vancouver",
+        "judul": "Dasar dan Konsep Algoritma & Pemrograman",
         "authors": [
-            "Ghena",
-            "Fauziah"
+            "Sulianta, Feri"
         ],
-        "tahun": 2,
+        "tahun": 2025,
         "jurnal": "",
-        "volume": "2",
+        "volume": "",
         "issue": "",
-        "halaman": "12",
+        "halaman": "",
         "edition": "",
         "editors": [],
-        "city": "",
+        "city": "Bandung",
         "publisher": "",
         "chapter": "",
-        "link": "",
+        "link": "https://www.researchgate.net/publication/388463506_Buku_Algoritma_dan_Pemrograman",
         "book": ""
     },
     {
@@ -598,58 +320,14 @@
     },
     {
         "referensi": "Journal/Article",
-        "style": "IEEE",
-        "judul": "Bisa ya seAsing itu",
+        "style": "Vancouver",
+        "judul": "a",
         "authors": [
-            "Palupi, Isan"
-        ],
-        "tahun": 2025,
-        "jurnal": "",
-        "volume": "1",
-        "issue": "1",
-        "halaman": "",
-        "edition": "",
-        "editors": [],
-        "city": "",
-        "publisher": "",
-        "chapter": "",
-        "link": "****a.netlify.app",
-        "book": ""
-    },
-    {
-        "referensi": "Book",
-        "style": "IEEE",
-        "judul": "df",
-        "authors": [
-            "Ss",
-            "Asasa,Aks"
-        ],
-        "tahun": 2,
-        "jurnal": "",
-        "volume": "2",
-        "issue": "",
-        "halaman": "1",
-        "edition": "1w",
-        "editors": [],
-        "city": "2",
-        "publisher": "w",
-        "chapter": "",
-        "link": "",
-        "book": ""
-    },
-    {
-        "referensi": "Book Section",
-        "style": "MLA",
-        "judul": "Be FiveVision",
-        "authors": [
-            "W",
-            "S",
-            "W",
             "A"
         ],
-        "tahun": 2,
+        "tahun": 3,
         "jurnal": "",
-        "volume": "1",
+        "volume": "",
         "issue": "",
         "halaman": "",
         "edition": "",
@@ -658,6 +336,46 @@
         "publisher": "",
         "chapter": "",
         "link": "",
-        "book": "1"
+        "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "IEEE",
+        "judul": "d",
+        "authors": [
+            "A"
+        ],
+        "tahun": 3,
+        "jurnal": "",
+        "volume": "",
+        "issue": "",
+        "halaman": "",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": ""
+    },
+    {
+        "referensi": "Journal/Article",
+        "style": "APA",
+        "judul": "a",
+        "authors": [
+            "A"
+        ],
+        "tahun": 3,
+        "jurnal": "",
+        "volume": "",
+        "issue": "",
+        "halaman": "",
+        "edition": "",
+        "editors": [],
+        "city": "",
+        "publisher": "",
+        "chapter": "",
+        "link": "",
+        "book": ""
     }
 ]
