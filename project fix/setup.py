@@ -1,5 +1,4 @@
 import os #mengimport modul os(sistem operasi) mengakses terminal, nama os, dll
-from tambahan import layar # mengimpor fungsi layar dari modul tambahan dan fungsinya untuk membersihkan layar sesuai jenis OS.
 
 while True:
     os.system('cls') #bersihkan layar
@@ -52,9 +51,9 @@ while True:
             init(autoreset=True) # inisialisasi colorama
             import main #seelah cek modul colorama berhasil di install maka jalankan line code 53 yaitu import modul main danjalankan modulnya
             main()
-        except ModuleNotFoundError:
+        except ModuleNotFoundError: #kalao ada modul yang belom terinstall, maka program tetap jalan dan memberi tahu kesalahan user
             input('SORY ADA TROBEL NI, COBA JALANIN LANGKAH B DLU, JANGAN LANGSUNG KE C !! [ENTER ⤷]')
-            os.system('py terminal-for-windows.py') #jalanin ulang modul terminalforwindiws
+            os.system('py terminal_for_windows.py') #jalanin ulang modul terminalforwindiws
             exit() #keluar dari terminal yang sebelumnya
     # jika yang di masukkan bukan a/b/c maka akan diberitahu kesalahannya
     else:

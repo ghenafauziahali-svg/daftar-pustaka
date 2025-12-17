@@ -1,6 +1,4 @@
-from tambahan import layar # mengimpor fungsi layar dari modul tambahan dan fungsinya untuk membersihkan layar sesuai Jenis OS.
 try: # try/except yaitu menangani masalah program yang dapat membuat program tersebut terhenti menjadi program yang akan tetap menjalankan program tersebut (tidak berhenti)
-    from dafpus_manager import masukan_data, lihat_daftar, ubah_data, hapus_data, muat_data, simpan_data # Mengimport modul membuat data, melihat data, merubah data, menghapus data, menyinkronkan data, dan menyimpan data. Yang berada di file dafpus_manager
     from colorama import Fore, Style, Back, init #memanggil fungsi pengubah warna text, warna background, gaya text, serta inisialisasi colorama
     #cek apakah modul colorama sudah terinstall?
     print('''
@@ -29,7 +27,8 @@ try: # try/except yaitu menangani masalah program yang dapat membuat program ter
     input('[Enter ⤷]') #pause
     # jika belum terinstall maka jalankan file setup.py
 except ModuleNotFoundError:
-    layar()
+    import os
+    os.system('cls' if os.name == 'nt' else 'clear')
     print('''
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣮⣵⣂⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣾⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠀⠀⠀⠀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -50,7 +49,10 @@ TUNGGUU YEAHH!
     input('LANJUTT??? TEKEN [ENTER ⤷]') # pause
     import setup
     setup()
+    exit()
     
+from dafpus_manager import masukan_data, lihat_daftar, ubah_data, hapus_data, muat_data, simpan_data # Mengimport modul membuat data, melihat data, merubah data, menghapus data, menyinkronkan data, dan menyimpan data. Yang berada di file dafpus_manager
+from tambahan import layar # mengimpor fungsi layar dari modul tambahan dan fungsinya untuk membersihkan layar sesuai Jenis OS.
 init(autoreset=True) # Inisialisasi modul colorama dan mereset warna text dan warna Background text
 
 muat_data() # sinkronisasi data
