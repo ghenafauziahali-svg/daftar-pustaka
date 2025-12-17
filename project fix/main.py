@@ -119,7 +119,7 @@ def tampilan_utama(): # Deklarasi fungsi menampilkan setup awal
                 input(Back.LIGHTBLUE_EX + 'Tekan enter untuk melanjutkan . . .' + Back.RESET)
                 simpan_data()
             elif opsi == 5: # keluar program
-                print(Fore.CYAN + '''
+                input(Fore.CYAN + '''
               ╭────────────────────────────────────────────────────────────────────╮
               │ ~~~ Terimakasih telah menggunakan daftar pustaka sederhana ini ~~~ │
               ╰────────────────────────────────────────────────────────────────────╯

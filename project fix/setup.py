@@ -1,10 +1,10 @@
 import os #mengimport modul os(sistem operasi) mengakses terminal, nama os, dll
-from tambahan import layar# mengimpor fungsi layar dari modul tambahan dan fungsinya untuk membersihkan layar sesuai jenis OS.
+from tambahan import layar # mengimpor fungsi layar dari modul tambahan dan fungsinya untuk membersihkan layar sesuai jenis OS.
 
 while True:
-    layar() #bersihkan layar
+    os.system('cls') #bersihkan layar
     # konfigurasi setup
-    print('''
+    print(r'''
 ⠀⠀⠀⠀⠀⢀⣤⠤⠤⠤⠤⠤⠤⠤⠤⠤⠤⢤⣤⣀⣀⡀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⢀⡼⠋⠀⣀⠄⡂⠍⣀⣒⣒⠂⠀⠬⠤⠤⠬⠍⠉⠝⠲⣄⡀⠀⠀   ____    __              ___      
 ⠀⠀⠀⢀⡾⠁⠀⠊⢔⠕⠈⣀⣀⡀⠈⠆⠀⠀⠀⡍⠁⠀⠁⢂⠀⠈⣷⠀   / __/__ / /___ _____    / _ )__ __
@@ -42,15 +42,20 @@ while True:
 ▌ SEBENTAR YAAK INSTALL MODUL COLORAMA DLU BIAR PRGRAMNYA GA ERROR 😋 ▐
 ▙▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▟''')
         os.system('pip install colorama') # instalasi colorama
-        from colorama import Fore, Back, Style, init #memanggil fungsi pengubah warna text, warna background, gaya text, serta inisialisasi colorama
-        init(autoreset=True) # inisialisasi colorama
         input('''┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ Wih kelar ni instal modulnya, sung gass keun teken [ENTER] ⤷ ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛''')#setelah kelar instalasinya maka pause terlebih dahulu
     # menjalankan program
     elif setupQuest == 'c' or setupQuest == 'C':
-        import main
-        main()
+        try:
+            from colorama import Fore, Back, Style, init #memanggil fungsi pengubah warna text, warna background, gaya text, serta inisialisasi colorama
+            init(autoreset=True) # inisialisasi colorama
+            import main #seelah cek modul colorama berhasil di install maka jalankan line code 53 yaitu import modul main danjalankan modulnya
+            main()
+        except ModuleNotFoundError:
+            input('SORY ADA TROBEL NI, COBA JALANIN LANGKAH B DLU, JANGAN LANGSUNG KE C !! [ENTER ⤷]')
+            os.system('py terminal-for-windows.py') #jalanin ulang modul terminalforwindiws
+            exit() #keluar dari terminal yang sebelumnya
     # jika yang di masukkan bukan a/b/c maka akan diberitahu kesalahannya
     else:
-        print('MOhon masukkan input yang benar dan yang sesuai ❌')
+        input('MOhon masukkan input yang benar dan yang sesuai ❌')

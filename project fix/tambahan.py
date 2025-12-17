@@ -1,5 +1,5 @@
 import os # Mengimport modul os untuk mengakses terminal Sistem Operasi(windows,macOs, linux, dll)
-from colorama import Style #impor fungsi init() dari library colorama untuk mengaktifkan mengatur warna di terminal
+# from colorama import Style #impor fungsi init() dari library colorama untuk mengaktifkan mengatur warna di terminal
 
 def layar():
     os.system('cls' if os.name == 'nt' else 'clear') # jalankan perintah cls jika OS windows, jalankan 'clear' jika OSnya bukan windows
