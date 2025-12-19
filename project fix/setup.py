@@ -17,44 +17,46 @@ while True:
 ⠀⠀⠀⠀⠀⠀⠀⠈⠙⠶⣭⣒⠩⠖⢠⣤⠄⠀⠀⠀⠀⠀⠠⠔⠁⡰⠀⣧ ⠀⢰⣿⣿⣿⣿⠟⣿⣿⣿⡟⢸⣿⣿⣿⣿⣿⡏⠀⠀⠀⠀⠀⣿⣿⣿⡿⠿⠿⠟⢠⣿⣿⣿⠁⠀⢸⣿⣿⣿⣾⣿⣿⠏⢸⣿⣿⣿⣿⣿⡏⠀⠀⢸⣿⣿⣿⣿⣿⣿⡿⠁⠀⣼⣿⣿⡏⠀⠈⠙⢿⣿⣿⣷⣦⡀⣸⣿⣿⡟⢰⣿⣿⣿⠀⢰⣿⣿⡿⢰⣿⣿⣿⣿⣿⣿⣿⣿⠃⠀       
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠲⢤⣀⣀⠉⠉⠀⠀⠀⠀⠀⠁⠀⣠⠏ ⢀⣿⣿⣿⣛⣁⣸⣿⣿⣿⢁⣿⣿⣿⣃⣀⣀⠀⠀⠀⠀⠀⣸⣿⣿⣿⠁⠀⠀⠀⣼⣿⣿⡏⠀⠀⢸⣿⣿⣿⣿⣿⠋⢀⣿⣿⣿⣃⣀⣀⠀⠀⠀⠈⣿⣿⣿⣿⣿⡟⠁⠀⢰⣿⣿⡿⢠⣿⣿⣿⣀⣨⣿⣿⣿⢡⣿⣿⣿⠁⣿⣿⣿⣃⣀⣿⣿⣿⢃⣿⣿⣿⠏⣿⣿⣿⣿⡏⠀⠀       
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠛⠒⠲⠶⠤⠴⠒⠚⠁  ⣸⣿⣿⣿⣿⣿⣿⣿⠟⠁⣼⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⢠⣿⣿⣿⡄⠀⠀⠀⢰⣿⣿⣏⠀⠀⠀⠘⣿⣿⣿⣏⠃⠀⣼⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⣿⣿⣿⣿⠙⠀⠀⢀⣿⣿⣿⡁⠘⣿⣿⣿⣿⣿⣿⠟⠃⣼⣿⣿⡍⠘⣿⣿⣿⣿⣿⣿⡿⠋⣸⣿⣿⡏⠀⣿⣿⣿⣯⠀⠀     ''')                                       
-    headerStp = f"{'█'*27}" + '> Konfigurasi🥱✋🏼 <' + f"{'█'*26}" #bikin header dengan f-string
+    headerStp = '█' * 72 #bikin header dengan f-string
     # list konfigurasi yang tersedia
     print(f'''{headerStp}
+██ {'Mengecek . . .':^66} ██
+{headerStp}
 ██ ⮞ [A] Python                   █ Cek versi python berapa 🤔        ██
 ██ ⮞ [B] Install Modul Colorama   █ Penting 🛠                         ██
 ██ ⮞ [C] Main                     █ Mulai Program                     ██
-{"█"*(len(headerStp)+1)}''') #len(headerstp) yaitu mengecek panjang element di tambah 1 agar bisa sejajar dengan len yang atas(headerStp)
+{headerStp}''') #len(headerstp) yaitu mengecek panjang element di tambah 1 agar bisa sejajar dengan len yang atas(headerStp)
     # konfirmasi
-    setupQuest = input('''  ╭─────────────────────────────────────────────────╮
-┏━┥  harap pilih A terlebih dahulu, dan seterusnya  │
-┃ ╰─────────────────────────────────────────────────╯
+    setupQuest = input('''  ╭───────────────────────────────────────────────────────╮
+┏━┥  Tekan [ENTER ⤷] untuk mengecek apakah ada trouble ?  │
+┃ ╰───────────────────────────────────────────────────────╯
 ┗━━━━━➤  ''')
-    # mengecek versi python
-    if setupQuest == 'a' or setupQuest == 'A':
+    try:
+        # mengecek versi python
         os.system('python --version')
         input('''┏━━━━━━━━━━━━━━━━━┓
 ┃ teken [ENTER] ⤷ ┃
 ┗━━━━━━━━━━━━━━━━━┛''')
+    except:
+        print('''┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+▌ ADA TROUBLE NI!❌, COBA UNINSTALL ULANG PYTHON, JANGAN LUPA CENTANG OPSI "ADD PYTHON TO PATH" ▌
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛''')
     # instalasi modul colorama untuk memformat(style dan warna) text dan background
-    elif setupQuest == 'b' or setupQuest == 'B':
-        print('''▛▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▜
+    print('''▛▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▜
 ▌ SEBENTAR YAAK INSTALL MODUL COLORAMA DLU BIAR PRGRAMNYA GA ERROR 😋 ▐
 ▙▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▟''')
-        os.system('pip install colorama') # instalasi colorama
-        input('''┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+    os.system('pip install colorama') # instalasi colorama
+    input('''┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 ┃ Wih kelar ni instal modulnya, sung gass keun teken [ENTER] ⤷ ┃
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛''')#setelah kelar instalasinya maka pause terlebih dahulu
+    
     # menjalankan program
-    elif setupQuest == 'c' or setupQuest == 'C':
-        try:
-            from colorama import Fore, Back, Style, init #memanggil fungsi pengubah warna text, warna background, gaya text, serta inisialisasi colorama
-            init(autoreset=True) # inisialisasi colorama
-            import main #seelah cek modul colorama berhasil di install maka jalankan line code 53 yaitu import modul main danjalankan modulnya
-            main()
-        except ModuleNotFoundError: #kalao ada modul yang belom terinstall, maka program tetap jalan dan memberi tahu kesalahan user
-            input('SORY ADA TROBEL NI, COBA JALANIN LANGKAH B DLU, JANGAN LANGSUNG KE C !! [ENTER ⤷]')
-            os.system('py terminal_for_windows.py') #jalanin ulang modul terminalforwindiws
-            exit() #keluar dari terminal yang sebelumnya
-    # jika yang di masukkan bukan a/b/c maka akan diberitahu kesalahannya
-    else:
-        input('MOhon masukkan input yang benar dan yang sesuai ❌')
+    try:
+        from colorama import Fore, Back, Style, init #memanggil fungsi pengubah warna text, warna background, gaya text, serta inisialisasi colorama
+        init(autoreset=True) # inisialisasi colorama
+        import main #seelah cek modul colorama berhasil di install maka jalankan line code 53 yaitu import modul main danjalankan modulnya
+        main()
+    except ModuleNotFoundError: #kalao ada modul yang belom terinstall, maka program tetap jalan dan memberi tahu kesalahan user
+        input('SORY ADA TROBEL NI, COBA JALANIN LANGKAH B DLU, JANGAN LANGSUNG KE C !! [ENTER ⤷]')
+        os.system('py terminal_for_windows.py') #jalanin ulang modul terminalforwindiws
+        exit() #keluar dari terminal yang sebelumnya

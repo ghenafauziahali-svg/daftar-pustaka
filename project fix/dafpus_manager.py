@@ -769,7 +769,10 @@ def hapus_data():
 ┏━┥  Pilih nomor data yang ingin dihapus  │
 ┃ ╰───────────────────────────────────────╯
 ┗━━━━━➤  ''')) - 1
-            print(Back.RED + Fore.LIGHTWHITE_EX + Style.BRIGHT + f'Kamu ingin menghapus Judul [{daftar_pustaka[index]["judul"]}] ❓')
+            try:
+                print(Back.RED + Fore.LIGHTWHITE_EX + Style.BRIGHT + f'Kamu ingin menghapus Judul [{daftar_pustaka[index]["judul"]}] ❓')
+            except IndexError:
+                print(f'wadoo sory bet ni yeah, yang kmu input -> ({index+1}) gada nieh')
             if index == -1: # user menginputkan 0, maka index sekarang -1 karena di "...━━━━━➤  ''')) - 1" nominal index di kurang 1, menjadi -1
                 layar()
                 from main import tampilan_utama
